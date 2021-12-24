@@ -12,11 +12,12 @@ namespace E_Ticaret_Proje_Form_Arayuzu
     {
         SqlConnection _connection = new SqlConnection(@"server=(localdb)\MSSQLLocalDB;initial catalog=Shopping;integrated security=true");
 
+        //sistemin ilk acilirken admin kimlik dogrulamasi
         public bool loginCheck(string mail, string password)
         {
             ConnectionControl();
 
-            SqlCommand command = new SqlCommand("SELECT Mail FROM AdminTable WHERE mail = @mail AND Password =@password",_connection);
+            SqlCommand command = new SqlCommand("SELECT * FROM AdminTable WHERE mail = @mail AND Password =@password",_connection);
 
             command.Parameters.AddWithValue("@mail",mail);
             command.Parameters.AddWithValue("@password", password);
@@ -26,9 +27,33 @@ namespace E_Ticaret_Proje_Form_Arayuzu
             _connection.Close();
 
             return a;
-
         }
 
+        //bir musterinin verilerini gunceller
+        public void updateCustomerData(int customerID,string name,string surname,string mail,bool banned)
+        {
+            ConnectionControl();
+
+            SqlCommand command = new SqlCommand("UPDATE CustomersTable SET Name = @name,Surname = @surname" +
+                ",Mail = @mail, Banned = @banned WHERE CustomerID = @customerID",_connection);
+
+            command.Parameters.AddWithValue("@customerID", customerID);
+            command.Parameters.AddWithValue("@name", name);
+            command.Parameters.AddWithValue("@surname", surname);
+            command.Parameters.AddWithValue("@mail", mail);
+            if (banned == true)
+            {
+                command.Parameters.AddWithValue("@banned", 1);
+            }
+            else
+            {
+                command.Parameters.AddWithValue("@banned", 0);
+            }
+
+            command.ExecuteNonQuery();
+
+            _connection.Close();
+        }
 
 
         private void ConnectionControl()

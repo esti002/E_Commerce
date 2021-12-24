@@ -70,10 +70,25 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="ShoppingDataSet11.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ShoppingDataSet11.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="ShoppingDataSet21.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ShoppingDataSet21.xsd</DependentUpon>
+    </Compile>
     <Compile Include="ShoppingDataSet3.Designer.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
       <DependentUpon>ShoppingDataSet3.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="ShoppingDataSet31.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ShoppingDataSet31.xsd</DependentUpon>
     </Compile>
     <EmbeddedResource Include="customerForm.resx">
       <DependentUpon>customerForm.cs</DependentUpon>
@@ -104,6 +119,28 @@
       <DependentUpon>Settings.settings</DependentUpon>
       <DesignTimeSharedInput>True</DesignTimeSharedInput>
     </Compile>
+    <None Include="ShoppingDataSet11.xsc">
+      <DependentUpon>ShoppingDataSet11.xsd</DependentUpon>
+    </None>
+    <None Include="ShoppingDataSet11.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>ShoppingDataSet11.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="ShoppingDataSet11.xss">
+      <DependentUpon>ShoppingDataSet11.xsd</DependentUpon>
+    </None>
+    <None Include="ShoppingDataSet21.xsc">
+      <DependentUpon>ShoppingDataSet21.xsd</DependentUpon>
+    </None>
+    <None Include="ShoppingDataSet21.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>ShoppingDataSet21.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="ShoppingDataSet21.xss">
+      <DependentUpon>ShoppingDataSet21.xsd</DependentUpon>
+    </None>
     <None Include="ShoppingDataSet3.xsc">
       <DependentUpon>ShoppingDataSet3.xsd</DependentUpon>
     </None>
@@ -114,6 +151,17 @@
     </None>
     <None Include="ShoppingDataSet3.xss">
       <DependentUpon>ShoppingDataSet3.xsd</DependentUpon>
+    </None>
+    <None Include="ShoppingDataSet31.xsc">
+      <DependentUpon>ShoppingDataSet31.xsd</DependentUpon>
+    </None>
+    <None Include="ShoppingDataSet31.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>ShoppingDataSet31.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="ShoppingDataSet31.xss">
+      <DependentUpon>ShoppingDataSet31.xsd</DependentUpon>
     </None>
   </ItemGroup>
   <ItemGroup>

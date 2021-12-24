@@ -30,6 +30,7 @@
         {
             this.components = new System.ComponentModel.Container();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.button1 = new System.Windows.Forms.Button();
             this.idTB = new System.Windows.Forms.TextBox();
             this.label6 = new System.Windows.Forms.Label();
             this.bannedCB = new System.Windows.Forms.CheckBox();
@@ -42,24 +43,40 @@
             this.label2 = new System.Windows.Forms.Label();
             this.nameTB = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
+            this.customersTableBindingSource2 = new System.Windows.Forms.BindingSource(this.components);
+            this.shoppingDataSet2 = new E_Ticaret_Proje_Form_Arayuzu.ShoppingDataSet2();
+            this.customersTableBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.shoppingDataSet = new E_Ticaret_Proje_Form_Arayuzu.ShoppingDataSet();
+            this.customersTableTableAdapter = new E_Ticaret_Proje_Form_Arayuzu.ShoppingDataSetTableAdapters.CustomersTableTableAdapter();
+            this.shoppingDataSet1 = new E_Ticaret_Proje_Form_Arayuzu.ShoppingDataSet1();
+            this.customersTableBindingSource1 = new System.Windows.Forms.BindingSource(this.components);
+            this.customersTableTableAdapter1 = new E_Ticaret_Proje_Form_Arayuzu.ShoppingDataSet1TableAdapters.CustomersTableTableAdapter();
+            this.customersTableTableAdapter2 = new E_Ticaret_Proje_Form_Arayuzu.ShoppingDataSet2TableAdapters.CustomersTableTableAdapter();
+            this.shoppingDataSet3 = new E_Ticaret_Proje_Form_Arayuzu.ShoppingDataSet3();
+            this.customersTableBindingSource3 = new System.Windows.Forms.BindingSource(this.components);
+            this.customersTableTableAdapter3 = new E_Ticaret_Proje_Form_Arayuzu.ShoppingDataSet3TableAdapters.CustomersTableTableAdapter();
             this.customerDGW = new System.Windows.Forms.DataGridView();
-            this.customerIdDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.nameNchar20DataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.customerIDDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.nameDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.surnameDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.mailDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.recordDateDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.bannedDataGridViewCheckBoxColumn = new System.Windows.Forms.DataGridViewCheckBoxColumn();
-            this.customersTableBindingSource = new System.Windows.Forms.BindingSource(this.components);
-            this.shoppingDataSet = new E_Ticaret_Proje_Form_Arayuzu.ShoppingDataSet();
-            this.customersTableTableAdapter = new E_Ticaret_Proje_Form_Arayuzu.ShoppingDataSetTableAdapters.CustomersTableTableAdapter();
             this.groupBox1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.customerDGW)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.customersTableBindingSource2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.shoppingDataSet2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.customersTableBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.shoppingDataSet)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.shoppingDataSet1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.customersTableBindingSource1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.shoppingDataSet3)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.customersTableBindingSource3)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.customerDGW)).BeginInit();
             this.SuspendLayout();
             // 
             // groupBox1
             // 
+            this.groupBox1.Controls.Add(this.button1);
             this.groupBox1.Controls.Add(this.idTB);
             this.groupBox1.Controls.Add(this.label6);
             this.groupBox1.Controls.Add(this.bannedCB);
@@ -75,10 +92,21 @@
             this.groupBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.groupBox1.Location = new System.Drawing.Point(59, 189);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(437, 230);
+            this.groupBox1.Size = new System.Drawing.Size(656, 230);
             this.groupBox1.TabIndex = 0;
             this.groupBox1.TabStop = false;
-            this.groupBox1.Text = "CUSTOMER DATA";
+            this.groupBox1.Text = "SELECTED CUSTOMER DATA";
+            // 
+            // button1
+            // 
+            this.button1.BackColor = System.Drawing.Color.ForestGreen;
+            this.button1.Location = new System.Drawing.Point(450, 82);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(153, 64);
+            this.button1.TabIndex = 12;
+            this.button1.Text = "UPDATE DATA";
+            this.button1.UseVisualStyleBackColor = false;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // idTB
             // 
@@ -189,41 +217,97 @@
             this.label1.TabIndex = 0;
             this.label1.Text = "NAME :";
             // 
+            // customersTableBindingSource2
+            // 
+            this.customersTableBindingSource2.DataMember = "CustomersTable";
+            this.customersTableBindingSource2.DataSource = this.shoppingDataSet2;
+            // 
+            // shoppingDataSet2
+            // 
+            this.shoppingDataSet2.DataSetName = "ShoppingDataSet2";
+            this.shoppingDataSet2.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
+            // 
+            // customersTableBindingSource
+            // 
+            this.customersTableBindingSource.DataMember = "CustomersTable";
+            this.customersTableBindingSource.DataSource = this.shoppingDataSet;
+            // 
+            // shoppingDataSet
+            // 
+            this.shoppingDataSet.DataSetName = "ShoppingDataSet";
+            this.shoppingDataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
+            // 
+            // customersTableTableAdapter
+            // 
+            this.customersTableTableAdapter.ClearBeforeFill = true;
+            // 
+            // shoppingDataSet1
+            // 
+            this.shoppingDataSet1.DataSetName = "ShoppingDataSet1";
+            this.shoppingDataSet1.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
+            // 
+            // customersTableBindingSource1
+            // 
+            this.customersTableBindingSource1.DataMember = "CustomersTable";
+            this.customersTableBindingSource1.DataSource = this.shoppingDataSet1;
+            // 
+            // customersTableTableAdapter1
+            // 
+            this.customersTableTableAdapter1.ClearBeforeFill = true;
+            // 
+            // customersTableTableAdapter2
+            // 
+            this.customersTableTableAdapter2.ClearBeforeFill = true;
+            // 
+            // shoppingDataSet3
+            // 
+            this.shoppingDataSet3.DataSetName = "ShoppingDataSet3";
+            this.shoppingDataSet3.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
+            // 
+            // customersTableBindingSource3
+            // 
+            this.customersTableBindingSource3.DataMember = "CustomersTable";
+            this.customersTableBindingSource3.DataSource = this.shoppingDataSet3;
+            // 
+            // customersTableTableAdapter3
+            // 
+            this.customersTableTableAdapter3.ClearBeforeFill = true;
+            // 
             // customerDGW
             // 
             this.customerDGW.AutoGenerateColumns = false;
             this.customerDGW.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.customerDGW.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.customerDGW.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
-            this.customerIdDataGridViewTextBoxColumn,
-            this.nameNchar20DataGridViewTextBoxColumn,
+            this.customerIDDataGridViewTextBoxColumn,
+            this.nameDataGridViewTextBoxColumn,
             this.surnameDataGridViewTextBoxColumn,
             this.mailDataGridViewTextBoxColumn,
             this.recordDateDataGridViewTextBoxColumn,
             this.bannedDataGridViewCheckBoxColumn});
-            this.customerDGW.DataSource = this.customersTableBindingSource;
-            this.customerDGW.Location = new System.Drawing.Point(21, 12);
+            this.customerDGW.DataSource = this.customersTableBindingSource3;
+            this.customerDGW.Location = new System.Drawing.Point(12, 12);
             this.customerDGW.Name = "customerDGW";
             this.customerDGW.RowHeadersWidth = 51;
             this.customerDGW.RowTemplate.Height = 24;
-            this.customerDGW.Size = new System.Drawing.Size(767, 150);
-            this.customerDGW.TabIndex = 0;
-            this.customerDGW.CellMouseClick += new System.Windows.Forms.DataGridViewCellMouseEventHandler(this.customerDGW_CellMouseClick);
+            this.customerDGW.Size = new System.Drawing.Size(776, 150);
+            this.customerDGW.TabIndex = 14;
+            this.customerDGW.CellMouseClick += new System.Windows.Forms.DataGridViewCellMouseEventHandler(this.customerDGW_CellMouseClick_1);
             // 
-            // customerIdDataGridViewTextBoxColumn
+            // customerIDDataGridViewTextBoxColumn
             // 
-            this.customerIdDataGridViewTextBoxColumn.DataPropertyName = "Customer Id";
-            this.customerIdDataGridViewTextBoxColumn.HeaderText = "Customer Id";
-            this.customerIdDataGridViewTextBoxColumn.MinimumWidth = 6;
-            this.customerIdDataGridViewTextBoxColumn.Name = "customerIdDataGridViewTextBoxColumn";
-            this.customerIdDataGridViewTextBoxColumn.ReadOnly = true;
+            this.customerIDDataGridViewTextBoxColumn.DataPropertyName = "CustomerID";
+            this.customerIDDataGridViewTextBoxColumn.HeaderText = "CustomerID";
+            this.customerIDDataGridViewTextBoxColumn.MinimumWidth = 6;
+            this.customerIDDataGridViewTextBoxColumn.Name = "customerIDDataGridViewTextBoxColumn";
+            this.customerIDDataGridViewTextBoxColumn.ReadOnly = true;
             // 
-            // nameNchar20DataGridViewTextBoxColumn
+            // nameDataGridViewTextBoxColumn
             // 
-            this.nameNchar20DataGridViewTextBoxColumn.DataPropertyName = "Name nchar(20)";
-            this.nameNchar20DataGridViewTextBoxColumn.HeaderText = "Name nchar(20)";
-            this.nameNchar20DataGridViewTextBoxColumn.MinimumWidth = 6;
-            this.nameNchar20DataGridViewTextBoxColumn.Name = "nameNchar20DataGridViewTextBoxColumn";
+            this.nameDataGridViewTextBoxColumn.DataPropertyName = "Name";
+            this.nameDataGridViewTextBoxColumn.HeaderText = "Name";
+            this.nameDataGridViewTextBoxColumn.MinimumWidth = 6;
+            this.nameDataGridViewTextBoxColumn.Name = "nameDataGridViewTextBoxColumn";
             // 
             // surnameDataGridViewTextBoxColumn
             // 
@@ -241,8 +325,8 @@
             // 
             // recordDateDataGridViewTextBoxColumn
             // 
-            this.recordDateDataGridViewTextBoxColumn.DataPropertyName = "Record Date";
-            this.recordDateDataGridViewTextBoxColumn.HeaderText = "Record Date";
+            this.recordDateDataGridViewTextBoxColumn.DataPropertyName = "RecordDate";
+            this.recordDateDataGridViewTextBoxColumn.HeaderText = "RecordDate";
             this.recordDateDataGridViewTextBoxColumn.MinimumWidth = 6;
             this.recordDateDataGridViewTextBoxColumn.Name = "recordDateDataGridViewTextBoxColumn";
             // 
@@ -252,20 +336,6 @@
             this.bannedDataGridViewCheckBoxColumn.HeaderText = "Banned";
             this.bannedDataGridViewCheckBoxColumn.MinimumWidth = 6;
             this.bannedDataGridViewCheckBoxColumn.Name = "bannedDataGridViewCheckBoxColumn";
-            // 
-            // customersTableBindingSource
-            // 
-            this.customersTableBindingSource.DataMember = "CustomersTable";
-            this.customersTableBindingSource.DataSource = this.shoppingDataSet;
-            // 
-            // shoppingDataSet
-            // 
-            this.shoppingDataSet.DataSetName = "ShoppingDataSet";
-            this.shoppingDataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
-            // 
-            // customersTableTableAdapter
-            // 
-            this.customersTableTableAdapter.ClearBeforeFill = true;
             // 
             // customerForm
             // 
@@ -279,9 +349,15 @@
             this.Load += new System.EventHandler(this.customerForm_Load);
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.customerDGW)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.customersTableBindingSource2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.shoppingDataSet2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.customersTableBindingSource)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.shoppingDataSet)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.shoppingDataSet1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.customersTableBindingSource1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.shoppingDataSet3)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.customersTableBindingSource3)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.customerDGW)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -290,7 +366,6 @@
 
         private System.Windows.Forms.GroupBox groupBox1;
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.DataGridView customerDGW;
         private System.Windows.Forms.CheckBox bannedCB;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.TextBox recordDateTB;
@@ -305,8 +380,19 @@
         private ShoppingDataSetTableAdapters.CustomersTableTableAdapter customersTableTableAdapter;
         private System.Windows.Forms.TextBox idTB;
         private System.Windows.Forms.Label label6;
-        private System.Windows.Forms.DataGridViewTextBoxColumn customerIdDataGridViewTextBoxColumn;
-        private System.Windows.Forms.DataGridViewTextBoxColumn nameNchar20DataGridViewTextBoxColumn;
+        private System.Windows.Forms.Button button1;
+        private ShoppingDataSet1 shoppingDataSet1;
+        private System.Windows.Forms.BindingSource customersTableBindingSource1;
+        private ShoppingDataSet1TableAdapters.CustomersTableTableAdapter customersTableTableAdapter1;
+        private ShoppingDataSet2 shoppingDataSet2;
+        private System.Windows.Forms.BindingSource customersTableBindingSource2;
+        private ShoppingDataSet2TableAdapters.CustomersTableTableAdapter customersTableTableAdapter2;
+        private ShoppingDataSet3 shoppingDataSet3;
+        private System.Windows.Forms.BindingSource customersTableBindingSource3;
+        private ShoppingDataSet3TableAdapters.CustomersTableTableAdapter customersTableTableAdapter3;
+        private System.Windows.Forms.DataGridView customerDGW;
+        private System.Windows.Forms.DataGridViewTextBoxColumn customerIDDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn nameDataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridViewTextBoxColumn surnameDataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridViewTextBoxColumn mailDataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridViewTextBoxColumn recordDateDataGridViewTextBoxColumn;
