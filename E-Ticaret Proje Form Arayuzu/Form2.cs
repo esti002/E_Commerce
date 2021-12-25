@@ -12,7 +12,8 @@ namespace E_Ticaret_Proje_Form_Arayuzu
 {
     public partial class Form2 : Form
     {
-        customerForm _customers = new customerForm(); 
+        customerForm customers = new customerForm();
+        productForm prducts = new productForm();
         public Form2()
         {
             InitializeComponent();
@@ -20,7 +21,12 @@ namespace E_Ticaret_Proje_Form_Arayuzu
 
         private void button1_Click(object sender, EventArgs e)
         {
-           _customers.ShowDialog();
+           customers.ShowDialog();
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            prducts.ShowDialog();
         }
     }
 }

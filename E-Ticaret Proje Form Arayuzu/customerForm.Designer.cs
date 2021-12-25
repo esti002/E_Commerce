@@ -344,8 +344,9 @@
             this.ClientSize = new System.Drawing.Size(800, 450);
             this.Controls.Add(this.customerDGW);
             this.Controls.Add(this.groupBox1);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedDialog;
             this.Name = "customerForm";
-            this.Text = "customerForm";
+            this.Text = "CUSTOMER OPERATIONS";
             this.Load += new System.EventHandler(this.customerForm_Load);
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
