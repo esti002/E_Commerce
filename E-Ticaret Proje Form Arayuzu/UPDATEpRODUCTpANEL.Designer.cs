@@ -37,7 +37,7 @@
             this.BackgroundImage = global::E_Ticaret_Proje_Form_Arayuzu.Properties.Resources.rect8461;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
             this.Name = "updateProductPanel";
-            this.Size = new System.Drawing.Size(727, 273);
+            this.Size = new System.Drawing.Size(850, 270);
             this.ResumeLayout(false);
 
         }

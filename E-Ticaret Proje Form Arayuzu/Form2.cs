@@ -14,6 +14,7 @@ namespace E_Ticaret_Proje_Form_Arayuzu
     {
         customerForm customers = new customerForm();
         productForm prducts = new productForm();
+        reviwForm reviews = new reviwForm();
         public Form2()
         {
             InitializeComponent();
@@ -27,6 +28,11 @@ namespace E_Ticaret_Proje_Form_Arayuzu
         private void button2_Click(object sender, EventArgs e)
         {
             prducts.ShowDialog();
+        }
+
+        private void button3_Click(object sender, EventArgs e)
+        {
+            reviews.ShowDialog();
         }
     }
 }

@@ -29,6 +29,33 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
+            this.productsTableBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.shoppingDataSet4 = new E_Ticaret_Proje_Form_Arayuzu.ShoppingDataSet4();
+            this.productsTableTableAdapter = new E_Ticaret_Proje_Form_Arayuzu.ShoppingDataSet4TableAdapters.ProductsTableTableAdapter();
+            this.shoppingDataSet7 = new E_Ticaret_Proje_Form_Arayuzu.ShoppingDataSet7();
+            this.categoriesTableBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.categoriesTableTableAdapter = new E_Ticaret_Proje_Form_Arayuzu.ShoppingDataSet7TableAdapters.CategoriesTableTableAdapter();
+            this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.CategoriesCB = new System.Windows.Forms.ComboBox();
+            this.categoriesTableBindingSource1 = new System.Windows.Forms.BindingSource(this.components);
+            this.shoppingDataSet8 = new E_Ticaret_Proje_Form_Arayuzu.ShoppingDataSet8();
+            this.propertiesTB = new System.Windows.Forms.RichTextBox();
+            this.label7 = new System.Windows.Forms.Label();
+            this.label5 = new System.Windows.Forms.Label();
+            this.priceTB = new System.Windows.Forms.TextBox();
+            this.label3 = new System.Windows.Forms.Label();
+            this.nameTB = new System.Windows.Forms.TextBox();
+            this.label2 = new System.Windows.Forms.Label();
+            this.idTB = new System.Windows.Forms.TextBox();
+            this.idLabel = new System.Windows.Forms.Label();
+            this.deleteTab = new System.Windows.Forms.Button();
+            this.updateTab = new System.Windows.Forms.Button();
+            this.addTab = new System.Windows.Forms.Button();
+            this.processButton = new System.Windows.Forms.Button();
+            this.categoriesTableTableAdapter1 = new E_Ticaret_Proje_Form_Arayuzu.ShoppingDataSet8TableAdapters.CategoriesTableTableAdapter();
+            this.shoppingDataSet9 = new E_Ticaret_Proje_Form_Arayuzu.ShoppingDataSet9();
+            this.productsTableBindingSource1 = new System.Windows.Forms.BindingSource(this.components);
+            this.productsTableTableAdapter1 = new E_Ticaret_Proje_Form_Arayuzu.ShoppingDataSet9TableAdapters.ProductsTableTableAdapter();
             this.productsDGW = new System.Windows.Forms.DataGridView();
             this.productIDDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.nameDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -37,16 +64,247 @@
             this.addDateDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.categoryIDDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.adderIDDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.productsTableBindingSource = new System.Windows.Forms.BindingSource(this.components);
-            this.shoppingDataSet4 = new E_Ticaret_Proje_Form_Arayuzu.ShoppingDataSet4();
-            this.productsTableTableAdapter = new E_Ticaret_Proje_Form_Arayuzu.ShoppingDataSet4TableAdapters.ProductsTableTableAdapter();
-            this.button1 = new System.Windows.Forms.Button();
-            this.button2 = new System.Windows.Forms.Button();
-            this.button3 = new System.Windows.Forms.Button();
-            ((System.ComponentModel.ISupportInitialize)(this.productsDGW)).BeginInit();
+            this.productsTableBindingSource2 = new System.Windows.Forms.BindingSource(this.components);
+            this.shoppingDataSet10 = new E_Ticaret_Proje_Form_Arayuzu.ShoppingDataSet10();
+            this.productsTableTableAdapter2 = new E_Ticaret_Proje_Form_Arayuzu.ShoppingDataSet10TableAdapters.ProductsTableTableAdapter();
             ((System.ComponentModel.ISupportInitialize)(this.productsTableBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.shoppingDataSet4)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.shoppingDataSet7)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.categoriesTableBindingSource)).BeginInit();
+            this.groupBox1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.categoriesTableBindingSource1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.shoppingDataSet8)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.shoppingDataSet9)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.productsTableBindingSource1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.productsDGW)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.productsTableBindingSource2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.shoppingDataSet10)).BeginInit();
             this.SuspendLayout();
+            // 
+            // productsTableBindingSource
+            // 
+            this.productsTableBindingSource.DataMember = "ProductsTable";
+            this.productsTableBindingSource.DataSource = this.shoppingDataSet4;
+            // 
+            // shoppingDataSet4
+            // 
+            this.shoppingDataSet4.DataSetName = "ShoppingDataSet4";
+            this.shoppingDataSet4.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
+            // 
+            // productsTableTableAdapter
+            // 
+            this.productsTableTableAdapter.ClearBeforeFill = true;
+            // 
+            // shoppingDataSet7
+            // 
+            this.shoppingDataSet7.DataSetName = "ShoppingDataSet7";
+            this.shoppingDataSet7.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
+            // 
+            // categoriesTableBindingSource
+            // 
+            this.categoriesTableBindingSource.DataMember = "CategoriesTable";
+            this.categoriesTableBindingSource.DataSource = this.shoppingDataSet7;
+            // 
+            // categoriesTableTableAdapter
+            // 
+            this.categoriesTableTableAdapter.ClearBeforeFill = true;
+            // 
+            // groupBox1
+            // 
+            this.groupBox1.BackColor = System.Drawing.Color.LightCyan;
+            this.groupBox1.Controls.Add(this.CategoriesCB);
+            this.groupBox1.Controls.Add(this.propertiesTB);
+            this.groupBox1.Controls.Add(this.label7);
+            this.groupBox1.Controls.Add(this.label5);
+            this.groupBox1.Controls.Add(this.priceTB);
+            this.groupBox1.Controls.Add(this.label3);
+            this.groupBox1.Controls.Add(this.nameTB);
+            this.groupBox1.Controls.Add(this.label2);
+            this.groupBox1.Controls.Add(this.idTB);
+            this.groupBox1.Controls.Add(this.idLabel);
+            this.groupBox1.Controls.Add(this.deleteTab);
+            this.groupBox1.Controls.Add(this.updateTab);
+            this.groupBox1.Controls.Add(this.addTab);
+            this.groupBox1.Controls.Add(this.processButton);
+            this.groupBox1.Location = new System.Drawing.Point(32, 225);
+            this.groupBox1.Name = "groupBox1";
+            this.groupBox1.Size = new System.Drawing.Size(1197, 262);
+            this.groupBox1.TabIndex = 4;
+            this.groupBox1.TabStop = false;
+            // 
+            // CategoriesCB
+            // 
+            this.CategoriesCB.DataSource = this.categoriesTableBindingSource1;
+            this.CategoriesCB.DisplayMember = "Category ID";
+            this.CategoriesCB.FormattingEnabled = true;
+            this.CategoriesCB.Location = new System.Drawing.Point(167, 145);
+            this.CategoriesCB.Name = "CategoriesCB";
+            this.CategoriesCB.Size = new System.Drawing.Size(184, 24);
+            this.CategoriesCB.TabIndex = 27;
+            // 
+            // categoriesTableBindingSource1
+            // 
+            this.categoriesTableBindingSource1.DataMember = "CategoriesTable";
+            this.categoriesTableBindingSource1.DataSource = this.shoppingDataSet8;
+            // 
+            // shoppingDataSet8
+            // 
+            this.shoppingDataSet8.DataSetName = "ShoppingDataSet8";
+            this.shoppingDataSet8.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
+            // 
+            // propertiesTB
+            // 
+            this.propertiesTB.Location = new System.Drawing.Point(396, 58);
+            this.propertiesTB.Name = "propertiesTB";
+            this.propertiesTB.Size = new System.Drawing.Size(448, 185);
+            this.propertiesTB.TabIndex = 25;
+            this.propertiesTB.Text = "";
+            // 
+            // label7
+            // 
+            this.label7.AutoSize = true;
+            this.label7.BackColor = System.Drawing.Color.Transparent;
+            this.label7.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold);
+            this.label7.Location = new System.Drawing.Point(393, 39);
+            this.label7.Name = "label7";
+            this.label7.Size = new System.Drawing.Size(112, 16);
+            this.label7.TabIndex = 24;
+            this.label7.Text = "PROPERTIES :";
+            // 
+            // label5
+            // 
+            this.label5.AutoSize = true;
+            this.label5.BackColor = System.Drawing.Color.Transparent;
+            this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold);
+            this.label5.Location = new System.Drawing.Point(48, 145);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(98, 16);
+            this.label5.TabIndex = 23;
+            this.label5.Text = "CATEGORY :";
+            // 
+            // priceTB
+            // 
+            this.priceTB.Location = new System.Drawing.Point(167, 114);
+            this.priceTB.Name = "priceTB";
+            this.priceTB.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            this.priceTB.Size = new System.Drawing.Size(184, 22);
+            this.priceTB.TabIndex = 22;
+            // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.BackColor = System.Drawing.Color.Transparent;
+            this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold);
+            this.label3.Location = new System.Drawing.Point(48, 120);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(60, 16);
+            this.label3.TabIndex = 21;
+            this.label3.Text = "PRICE :";
+            // 
+            // nameTB
+            // 
+            this.nameTB.Location = new System.Drawing.Point(167, 86);
+            this.nameTB.Name = "nameTB";
+            this.nameTB.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            this.nameTB.Size = new System.Drawing.Size(184, 22);
+            this.nameTB.TabIndex = 20;
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.BackColor = System.Drawing.Color.Transparent;
+            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold);
+            this.label2.Location = new System.Drawing.Point(48, 92);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(58, 16);
+            this.label2.TabIndex = 19;
+            this.label2.Text = "NAME :";
+            // 
+            // idTB
+            // 
+            this.idTB.Location = new System.Drawing.Point(167, 58);
+            this.idTB.Name = "idTB";
+            this.idTB.ReadOnly = true;
+            this.idTB.Size = new System.Drawing.Size(184, 22);
+            this.idTB.TabIndex = 18;
+            this.idTB.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            // 
+            // idLabel
+            // 
+            this.idLabel.AutoSize = true;
+            this.idLabel.BackColor = System.Drawing.Color.Transparent;
+            this.idLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold);
+            this.idLabel.Location = new System.Drawing.Point(48, 64);
+            this.idLabel.Name = "idLabel";
+            this.idLabel.Size = new System.Drawing.Size(30, 16);
+            this.idLabel.TabIndex = 17;
+            this.idLabel.Text = "ID :";
+            // 
+            // deleteTab
+            // 
+            this.deleteTab.BackColor = System.Drawing.Color.White;
+            this.deleteTab.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold);
+            this.deleteTab.Location = new System.Drawing.Point(226, 0);
+            this.deleteTab.Name = "deleteTab";
+            this.deleteTab.Size = new System.Drawing.Size(107, 40);
+            this.deleteTab.TabIndex = 6;
+            this.deleteTab.Text = "DELETE";
+            this.deleteTab.UseVisualStyleBackColor = false;
+            this.deleteTab.Click += new System.EventHandler(this.deleteTab_Click);
+            // 
+            // updateTab
+            // 
+            this.updateTab.BackColor = System.Drawing.Color.White;
+            this.updateTab.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold);
+            this.updateTab.Location = new System.Drawing.Point(113, 0);
+            this.updateTab.Name = "updateTab";
+            this.updateTab.Size = new System.Drawing.Size(107, 40);
+            this.updateTab.TabIndex = 5;
+            this.updateTab.Text = "UPDATE";
+            this.updateTab.UseVisualStyleBackColor = false;
+            this.updateTab.Click += new System.EventHandler(this.updateTab_Click);
+            // 
+            // addTab
+            // 
+            this.addTab.BackColor = System.Drawing.Color.White;
+            this.addTab.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.addTab.Location = new System.Drawing.Point(0, 0);
+            this.addTab.Name = "addTab";
+            this.addTab.Size = new System.Drawing.Size(107, 40);
+            this.addTab.TabIndex = 4;
+            this.addTab.Text = "ADD";
+            this.addTab.UseVisualStyleBackColor = false;
+            this.addTab.Click += new System.EventHandler(this.button4_Click);
+            // 
+            // processButton
+            // 
+            this.processButton.BackColor = System.Drawing.Color.ForestGreen;
+            this.processButton.Font = new System.Drawing.Font("Segoe UI Emoji", 15F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.processButton.Location = new System.Drawing.Point(888, 100);
+            this.processButton.Name = "processButton";
+            this.processButton.Size = new System.Drawing.Size(287, 69);
+            this.processButton.TabIndex = 1;
+            this.processButton.Text = "ADD PRODUCT";
+            this.processButton.UseVisualStyleBackColor = false;
+            this.processButton.Click += new System.EventHandler(this.button1_Click);
+            // 
+            // categoriesTableTableAdapter1
+            // 
+            this.categoriesTableTableAdapter1.ClearBeforeFill = true;
+            // 
+            // shoppingDataSet9
+            // 
+            this.shoppingDataSet9.DataSetName = "ShoppingDataSet9";
+            this.shoppingDataSet9.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
+            // 
+            // productsTableBindingSource1
+            // 
+            this.productsTableBindingSource1.DataMember = "ProductsTable";
+            this.productsTableBindingSource1.DataSource = this.shoppingDataSet9;
+            // 
+            // productsTableTableAdapter1
+            // 
+            this.productsTableTableAdapter1.ClearBeforeFill = true;
             // 
             // productsDGW
             // 
@@ -61,18 +319,19 @@
             this.addDateDataGridViewTextBoxColumn,
             this.categoryIDDataGridViewTextBoxColumn,
             this.adderIDDataGridViewTextBoxColumn});
-            this.productsDGW.DataSource = this.productsTableBindingSource;
-            this.productsDGW.Location = new System.Drawing.Point(0, 0);
+            this.productsDGW.DataSource = this.productsTableBindingSource2;
+            this.productsDGW.Location = new System.Drawing.Point(12, 12);
             this.productsDGW.Name = "productsDGW";
             this.productsDGW.RowHeadersWidth = 51;
             this.productsDGW.RowTemplate.Height = 24;
-            this.productsDGW.Size = new System.Drawing.Size(1261, 191);
-            this.productsDGW.TabIndex = 0;
+            this.productsDGW.Size = new System.Drawing.Size(1195, 198);
+            this.productsDGW.TabIndex = 28;
+            this.productsDGW.CellMouseClick += new System.Windows.Forms.DataGridViewCellMouseEventHandler(this.productsDGW_CellMouseClick);
             // 
             // productIDDataGridViewTextBoxColumn
             // 
-            this.productIDDataGridViewTextBoxColumn.DataPropertyName = "Product ID";
-            this.productIDDataGridViewTextBoxColumn.HeaderText = "Product ID";
+            this.productIDDataGridViewTextBoxColumn.DataPropertyName = "Product_ID";
+            this.productIDDataGridViewTextBoxColumn.HeaderText = "Product_ID";
             this.productIDDataGridViewTextBoxColumn.MinimumWidth = 6;
             this.productIDDataGridViewTextBoxColumn.Name = "productIDDataGridViewTextBoxColumn";
             this.productIDDataGridViewTextBoxColumn.ReadOnly = true;
@@ -100,98 +359,100 @@
             // 
             // addDateDataGridViewTextBoxColumn
             // 
-            this.addDateDataGridViewTextBoxColumn.DataPropertyName = "Add Date";
-            this.addDateDataGridViewTextBoxColumn.HeaderText = "Add Date";
+            this.addDateDataGridViewTextBoxColumn.DataPropertyName = "Add_Date";
+            this.addDateDataGridViewTextBoxColumn.HeaderText = "Add_Date";
             this.addDateDataGridViewTextBoxColumn.MinimumWidth = 6;
             this.addDateDataGridViewTextBoxColumn.Name = "addDateDataGridViewTextBoxColumn";
             // 
             // categoryIDDataGridViewTextBoxColumn
             // 
-            this.categoryIDDataGridViewTextBoxColumn.DataPropertyName = "Category ID";
-            this.categoryIDDataGridViewTextBoxColumn.HeaderText = "Category ID";
+            this.categoryIDDataGridViewTextBoxColumn.DataPropertyName = "Category_ID";
+            this.categoryIDDataGridViewTextBoxColumn.HeaderText = "Category_ID";
             this.categoryIDDataGridViewTextBoxColumn.MinimumWidth = 6;
             this.categoryIDDataGridViewTextBoxColumn.Name = "categoryIDDataGridViewTextBoxColumn";
             // 
             // adderIDDataGridViewTextBoxColumn
             // 
-            this.adderIDDataGridViewTextBoxColumn.DataPropertyName = "Adder ID";
-            this.adderIDDataGridViewTextBoxColumn.HeaderText = "Adder ID";
+            this.adderIDDataGridViewTextBoxColumn.DataPropertyName = "Adder_ID";
+            this.adderIDDataGridViewTextBoxColumn.HeaderText = "Adder_ID";
             this.adderIDDataGridViewTextBoxColumn.MinimumWidth = 6;
             this.adderIDDataGridViewTextBoxColumn.Name = "adderIDDataGridViewTextBoxColumn";
             // 
-            // productsTableBindingSource
+            // productsTableBindingSource2
             // 
-            this.productsTableBindingSource.DataMember = "ProductsTable";
-            this.productsTableBindingSource.DataSource = this.shoppingDataSet4;
+            this.productsTableBindingSource2.DataMember = "ProductsTable";
+            this.productsTableBindingSource2.DataSource = this.shoppingDataSet10;
             // 
-            // shoppingDataSet4
+            // shoppingDataSet10
             // 
-            this.shoppingDataSet4.DataSetName = "ShoppingDataSet4";
-            this.shoppingDataSet4.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
+            this.shoppingDataSet10.DataSetName = "ShoppingDataSet10";
+            this.shoppingDataSet10.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
             // 
-            // productsTableTableAdapter
+            // productsTableTableAdapter2
             // 
-            this.productsTableTableAdapter.ClearBeforeFill = true;
-            // 
-            // button1
-            // 
-            this.button1.BackColor = System.Drawing.Color.ForestGreen;
-            this.button1.Font = new System.Drawing.Font("Segoe UI Emoji", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button1.Location = new System.Drawing.Point(12, 221);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(277, 69);
-            this.button1.TabIndex = 1;
-            this.button1.Text = "ADD PRODUCT";
-            this.button1.UseVisualStyleBackColor = false;
-            // 
-            // button2
-            // 
-            this.button2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(128)))));
-            this.button2.Font = new System.Drawing.Font("Segoe UI Emoji", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button2.Location = new System.Drawing.Point(12, 296);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(277, 69);
-            this.button2.TabIndex = 2;
-            this.button2.Text = "UPDATE PRODUCT";
-            this.button2.UseVisualStyleBackColor = false;
-            // 
-            // button3
-            // 
-            this.button3.BackColor = System.Drawing.Color.Firebrick;
-            this.button3.Font = new System.Drawing.Font("Segoe UI Emoji", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button3.Location = new System.Drawing.Point(12, 371);
-            this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(277, 69);
-            this.button3.TabIndex = 3;
-            this.button3.Text = "DELETE PRODUCT";
-            this.button3.UseVisualStyleBackColor = false;
+            this.productsTableTableAdapter2.ClearBeforeFill = true;
             // 
             // productForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.Color.LightCyan;
             this.ClientSize = new System.Drawing.Size(1261, 535);
-            this.Controls.Add(this.button3);
-            this.Controls.Add(this.button2);
-            this.Controls.Add(this.button1);
             this.Controls.Add(this.productsDGW);
+            this.Controls.Add(this.groupBox1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedDialog;
             this.Name = "productForm";
             this.Text = "PRODUCT OPERATIONS";
             this.Load += new System.EventHandler(this.productForm_Load);
-            ((System.ComponentModel.ISupportInitialize)(this.productsDGW)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.productsTableBindingSource)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.shoppingDataSet4)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.shoppingDataSet7)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.categoriesTableBindingSource)).EndInit();
+            this.groupBox1.ResumeLayout(false);
+            this.groupBox1.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.categoriesTableBindingSource1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.shoppingDataSet8)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.shoppingDataSet9)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.productsTableBindingSource1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.productsDGW)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.productsTableBindingSource2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.shoppingDataSet10)).EndInit();
             this.ResumeLayout(false);
 
         }
 
         #endregion
-
-        private System.Windows.Forms.DataGridView productsDGW;
         private ShoppingDataSet4 shoppingDataSet4;
         private System.Windows.Forms.BindingSource productsTableBindingSource;
         private ShoppingDataSet4TableAdapters.ProductsTableTableAdapter productsTableTableAdapter;
+        private ShoppingDataSet7 shoppingDataSet7;
+        private System.Windows.Forms.BindingSource categoriesTableBindingSource;
+        private ShoppingDataSet7TableAdapters.CategoriesTableTableAdapter categoriesTableTableAdapter;
+        private System.Windows.Forms.GroupBox groupBox1;
+        private System.Windows.Forms.Button deleteTab;
+        private System.Windows.Forms.Button updateTab;
+        private System.Windows.Forms.Button addTab;
+        private System.Windows.Forms.ComboBox CategoriesCB;
+        private System.Windows.Forms.RichTextBox propertiesTB;
+        private System.Windows.Forms.Label label7;
+        private System.Windows.Forms.Label label5;
+        private System.Windows.Forms.TextBox priceTB;
+        private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.TextBox nameTB;
+        private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.TextBox idTB;
+        private System.Windows.Forms.Label idLabel;
+        private ShoppingDataSet8 shoppingDataSet8;
+        private System.Windows.Forms.BindingSource categoriesTableBindingSource1;
+        private ShoppingDataSet8TableAdapters.CategoriesTableTableAdapter categoriesTableTableAdapter1;
+        private System.Windows.Forms.Button processButton;
+        private ShoppingDataSet9 shoppingDataSet9;
+        private System.Windows.Forms.BindingSource productsTableBindingSource1;
+        private ShoppingDataSet9TableAdapters.ProductsTableTableAdapter productsTableTableAdapter1;
+        private System.Windows.Forms.DataGridView productsDGW;
+        private ShoppingDataSet10 shoppingDataSet10;
+        private System.Windows.Forms.BindingSource productsTableBindingSource2;
+        private ShoppingDataSet10TableAdapters.ProductsTableTableAdapter productsTableTableAdapter2;
         private System.Windows.Forms.DataGridViewTextBoxColumn productIDDataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridViewTextBoxColumn nameDataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridViewTextBoxColumn propertiesDataGridViewTextBoxColumn;
@@ -199,8 +460,5 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn addDateDataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridViewTextBoxColumn categoryIDDataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridViewTextBoxColumn adderIDDataGridViewTextBoxColumn;
-        private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.Button button2;
-        private System.Windows.Forms.Button button3;
     }
 }

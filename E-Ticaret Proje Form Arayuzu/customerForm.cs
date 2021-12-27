@@ -23,8 +23,6 @@ namespace E_Ticaret_Proje_Form_Arayuzu
         {
             // TODO: Bu kod satırı 'shoppingDataSet3.CustomersTable' tablosuna veri yükler. Bunu gerektiği şekilde taşıyabilir, veya kaldırabilirsiniz.
             this.customersTableTableAdapter3.Fill(this.shoppingDataSet3.CustomersTable);
-            
-            
 
             idTB.Text = customerDGW.Rows[0].Cells[0].Value.ToString();
             nameTB.Text = customerDGW.Rows[0].Cells[1].Value.ToString();

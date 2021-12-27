@@ -10,16 +10,11 @@ using System.Windows.Forms;
 
 namespace E_Ticaret_Proje_Form_Arayuzu
 {
-    public partial class addProductPanel : UserControl
+    public partial class reviwForm : Form
     {
-        public addProductPanel()
+        public reviwForm()
         {
             InitializeComponent();
-        }
-
-        private void addProductPanel_Load(object sender, EventArgs e)
-        {
-
         }
     }
 }
