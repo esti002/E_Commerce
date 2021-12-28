@@ -23,8 +23,10 @@ namespace E_Ticaret_Proje_Form_Arayuzu
         {
             // TODO: Bu kod satırı 'shoppingDataSet10.ProductsTable' tablosuna veri yükler. Bunu gerektiği şekilde taşıyabilir, veya kaldırabilirsiniz.
             this.productsTableTableAdapter2.Fill(this.shoppingDataSet10.ProductsTable);
-
-            idTB.Text = productsDGW.Rows[0].Cells[0].Value.ToString();
+            if (buttonMemory != 0)
+            {
+                idTB.Text = productsDGW.Rows[0].Cells[0].Value.ToString();
+            }
             nameTB.Text = productsDGW.Rows[0].Cells[1].Value.ToString();
             priceTB.Text = productsDGW.Rows[0].Cells[3].Value.ToString();
             CategoriesCB.Text = productsDGW.Rows[0].Cells[5].Value.ToString();
@@ -39,7 +41,8 @@ namespace E_Ticaret_Proje_Form_Arayuzu
         {
             if (buttonMemory == 0)
             {
-                access.addProduct(nameTB.Text, propertiesTB.Text,System.Convert.ToInt32(priceTB.Text),System.Convert.ToInt32(CategoriesCB.Text),1);
+                access.addProduct(nameTB.Text, propertiesTB.Text,System.Convert.ToInt32(priceTB.Text),
+                    System.Convert.ToInt32(CategoriesCB.Text), System.Convert.ToInt32(adminID.Text));
                 MessageBox.Show("Product added.");
                 this.productsTableTableAdapter2.Fill(this.shoppingDataSet10.ProductsTable);
             }
@@ -117,7 +120,10 @@ namespace E_Ticaret_Proje_Form_Arayuzu
 
         private void productsDGW_CellMouseClick(object sender, DataGridViewCellMouseEventArgs e)
         {
-            idTB.Text = productsDGW.CurrentRow.Cells[0].Value.ToString();
+            if (buttonMemory != 0)
+            {
+                idTB.Text = productsDGW.CurrentRow.Cells[0].Value.ToString();
+            }
             nameTB.Text = productsDGW.CurrentRow.Cells[1].Value.ToString();
             priceTB.Text = productsDGW.CurrentRow.Cells[3].Value.ToString();
             CategoriesCB.Text = productsDGW.CurrentRow.Cells[5].Value.ToString();

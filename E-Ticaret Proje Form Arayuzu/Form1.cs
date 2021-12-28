@@ -21,9 +21,12 @@ namespace E_Ticaret_Proje_Form_Arayuzu
 
         private void button1_Click(object sender, EventArgs e)
         {
-            if (access.loginCheck(textBox1.Text, textBox2.Text)==true)
+            int adminID=0;
+
+            if (access.loginCheck(textBox1.Text, textBox2.Text,ref adminID)==true)
             {
                 this.Hide();
+                form2.adminID.Text = System.Convert.ToString(adminID);
                 form2.ShowDialog();
                 this.Close();
             }

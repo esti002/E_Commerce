@@ -50,6 +50,12 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="AccessingDB.cs" />
+    <Compile Include="adminManager.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="adminManager.Designer.cs">
+      <DependentUpon>adminManager.cs</DependentUpon>
+    </Compile>
     <Compile Include="customerForm.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -91,6 +97,41 @@
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
       <DependentUpon>ShoppingDataSet11.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="ShoppingDataSet111.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ShoppingDataSet111.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="ShoppingDataSet12.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ShoppingDataSet12.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="ShoppingDataSet13.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ShoppingDataSet13.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="ShoppingDataSet14.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ShoppingDataSet14.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="ShoppingDataSet15.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ShoppingDataSet15.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="ShoppingDataSet16.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ShoppingDataSet16.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="ShoppingDataSet17.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ShoppingDataSet17.xsd</DependentUpon>
     </Compile>
     <Compile Include="ShoppingDataSet21.Designer.cs">
       <AutoGen>True</AutoGen>
@@ -137,6 +178,15 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>ShoppingDataSet9.xsd</DependentUpon>
     </Compile>
+    <Compile Include="shopRegistrations.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="shopRegistrations.Designer.cs">
+      <DependentUpon>shopRegistrations.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="adminManager.resx">
+      <DependentUpon>adminManager.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="customerForm.resx">
       <DependentUpon>customerForm.cs</DependentUpon>
     </EmbeddedResource>
@@ -161,6 +211,9 @@
     </Compile>
     <EmbeddedResource Include="reviwForm.resx">
       <DependentUpon>reviwForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="shopRegistrations.resx">
+      <DependentUpon>shopRegistrations.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="packages.config" />
     <None Include="Properties\Settings.settings">
@@ -193,6 +246,83 @@
     </None>
     <None Include="ShoppingDataSet11.xss">
       <DependentUpon>ShoppingDataSet11.xsd</DependentUpon>
+    </None>
+    <None Include="ShoppingDataSet111.xsc">
+      <DependentUpon>ShoppingDataSet111.xsd</DependentUpon>
+    </None>
+    <None Include="ShoppingDataSet111.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>ShoppingDataSet111.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="ShoppingDataSet111.xss">
+      <DependentUpon>ShoppingDataSet111.xsd</DependentUpon>
+    </None>
+    <None Include="ShoppingDataSet12.xsc">
+      <DependentUpon>ShoppingDataSet12.xsd</DependentUpon>
+    </None>
+    <None Include="ShoppingDataSet12.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>ShoppingDataSet12.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="ShoppingDataSet12.xss">
+      <DependentUpon>ShoppingDataSet12.xsd</DependentUpon>
+    </None>
+    <None Include="ShoppingDataSet13.xsc">
+      <DependentUpon>ShoppingDataSet13.xsd</DependentUpon>
+    </None>
+    <None Include="ShoppingDataSet13.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>ShoppingDataSet13.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="ShoppingDataSet13.xss">
+      <DependentUpon>ShoppingDataSet13.xsd</DependentUpon>
+    </None>
+    <None Include="ShoppingDataSet14.xsc">
+      <DependentUpon>ShoppingDataSet14.xsd</DependentUpon>
+    </None>
+    <None Include="ShoppingDataSet14.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>ShoppingDataSet14.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="ShoppingDataSet14.xss">
+      <DependentUpon>ShoppingDataSet14.xsd</DependentUpon>
+    </None>
+    <None Include="ShoppingDataSet15.xsc">
+      <DependentUpon>ShoppingDataSet15.xsd</DependentUpon>
+    </None>
+    <None Include="ShoppingDataSet15.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>ShoppingDataSet15.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="ShoppingDataSet15.xss">
+      <DependentUpon>ShoppingDataSet15.xsd</DependentUpon>
+    </None>
+    <None Include="ShoppingDataSet16.xsc">
+      <DependentUpon>ShoppingDataSet16.xsd</DependentUpon>
+    </None>
+    <None Include="ShoppingDataSet16.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>ShoppingDataSet16.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="ShoppingDataSet16.xss">
+      <DependentUpon>ShoppingDataSet16.xsd</DependentUpon>
+    </None>
+    <None Include="ShoppingDataSet17.xsc">
+      <DependentUpon>ShoppingDataSet17.xsd</DependentUpon>
+    </None>
+    <None Include="ShoppingDataSet17.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>ShoppingDataSet17.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="ShoppingDataSet17.xss">
+      <DependentUpon>ShoppingDataSet17.xsd</DependentUpon>
     </None>
     <None Include="ShoppingDataSet21.xsc">
       <DependentUpon>ShoppingDataSet21.xsd</DependentUpon>

@@ -13,14 +13,22 @@ namespace E_Ticaret_Proje_Form_Arayuzu
         SqlConnection _connection = new SqlConnection(@"server=(localdb)\MSSQLLocalDB;initial catalog=Shopping;integrated security=true");
 
         //sistemin ilk acilirken admin kimlik dogrulamasi
-        public bool loginCheck(string mail, string password)
+        public bool loginCheck(string mail, string password, ref int adminID)
         {
             ConnectionControl();
 
-            SqlCommand command = new SqlCommand("SELECT * FROM AdminTable WHERE mail = @mail AND Password =@password",_connection);
+            SqlCommand command = new SqlCommand("SELECT Admin_ID FROM AdminTable WHERE mail = @mail AND Password =@password",_connection);
 
             command.Parameters.AddWithValue("@mail",mail);
             command.Parameters.AddWithValue("@password", password);
+
+            SqlDataReader dr = command.ExecuteReader();
+            if (dr.Read())
+            {
+                adminID =System.Convert.ToInt32(dr["Admin_ID"]);
+            }
+
+            dr.Close();
 
             bool a =  command.ExecuteScalar() != null;
 
@@ -98,6 +106,42 @@ namespace E_Ticaret_Proje_Form_Arayuzu
             SqlCommand command = new SqlCommand("DELETE FROM ProductsTable WHERE Product_ID = @productID", _connection);
 
             command.Parameters.AddWithValue("@productID", productID);
+
+            command.ExecuteNonQuery();
+
+            _connection.Close();
+        }
+
+        public void updateReviews(int reviewID, int reviewerID,int productID,string review,bool confirmed)
+        {
+            ConnectionControl();
+
+            SqlCommand command = new SqlCommand("UPDATE ReviewsTable SET Reviwer_ID=@reviewerID,Product_ID=@productID," +
+                "Review = @review, Confirmed = @confirmed WHERE Review_ID= @reviewID", _connection);
+
+            command.Parameters.AddWithValue("@reviewerID", reviewerID);
+            command.Parameters.AddWithValue("@productID", productID);
+            command.Parameters.AddWithValue("@review", review);
+            command.Parameters.AddWithValue("@confirmed", confirmed);
+            command.Parameters.AddWithValue("@reviewID", reviewID); 
+
+            command.ExecuteNonQuery();
+
+            _connection.Close();
+        }
+
+        public void addNewAdmin(string name,string surname,string mail,string password,string phoneNumber)
+        {
+            ConnectionControl();
+
+            SqlCommand command = new SqlCommand("INSERT INTO AdminTable(Name,Surname,Mail,Password,Phone_Number)" +
+                "VALUES(@name,@surname,@mail,@password,@phoneNumber)", _connection);
+
+            command.Parameters.AddWithValue("@name", name);
+            command.Parameters.AddWithValue("@surname", surname);
+            command.Parameters.AddWithValue("@mail", mail);
+            command.Parameters.AddWithValue("@password", password);
+            command.Parameters.AddWithValue("@phoneNumber", phoneNumber);
 
             command.ExecuteNonQuery();
 

@@ -62,6 +62,8 @@
             this.mailDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.recordDateDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.bannedDataGridViewCheckBoxColumn = new System.Windows.Forms.DataGridViewCheckBoxColumn();
+            this.adminID = new System.Windows.Forms.Label();
+            this.label7 = new System.Windows.Forms.Label();
             this.groupBox1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.customersTableBindingSource2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.shoppingDataSet2)).BeginInit();
@@ -92,7 +94,7 @@
             this.groupBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.groupBox1.Location = new System.Drawing.Point(59, 189);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(656, 230);
+            this.groupBox1.Size = new System.Drawing.Size(656, 221);
             this.groupBox1.TabIndex = 0;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "SELECTED CUSTOMER DATA";
@@ -103,7 +105,7 @@
             this.button1.Location = new System.Drawing.Point(450, 82);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(153, 64);
-            this.button1.TabIndex = 12;
+            this.button1.TabIndex = 7;
             this.button1.Text = "UPDATE DATA";
             this.button1.UseVisualStyleBackColor = false;
             this.button1.Click += new System.EventHandler(this.button1_Click);
@@ -114,7 +116,7 @@
             this.idTB.Location = new System.Drawing.Point(175, 40);
             this.idTB.Name = "idTB";
             this.idTB.Size = new System.Drawing.Size(224, 22);
-            this.idTB.TabIndex = 11;
+            this.idTB.TabIndex = 1;
             // 
             // label6
             // 
@@ -132,7 +134,7 @@
             this.bannedCB.Location = new System.Drawing.Point(175, 183);
             this.bannedCB.Name = "bannedCB";
             this.bannedCB.Size = new System.Drawing.Size(18, 17);
-            this.bannedCB.TabIndex = 9;
+            this.bannedCB.TabIndex = 6;
             this.bannedCB.UseVisualStyleBackColor = true;
             // 
             // label5
@@ -151,7 +153,7 @@
             this.recordDateTB.Location = new System.Drawing.Point(175, 152);
             this.recordDateTB.Name = "recordDateTB";
             this.recordDateTB.Size = new System.Drawing.Size(224, 22);
-            this.recordDateTB.TabIndex = 7;
+            this.recordDateTB.TabIndex = 5;
             // 
             // label4
             // 
@@ -169,7 +171,7 @@
             this.mailTB.Location = new System.Drawing.Point(175, 124);
             this.mailTB.Name = "mailTB";
             this.mailTB.Size = new System.Drawing.Size(224, 22);
-            this.mailTB.TabIndex = 5;
+            this.mailTB.TabIndex = 4;
             // 
             // label3
             // 
@@ -205,7 +207,7 @@
             this.nameTB.Location = new System.Drawing.Point(175, 68);
             this.nameTB.Name = "nameTB";
             this.nameTB.Size = new System.Drawing.Size(224, 22);
-            this.nameTB.TabIndex = 1;
+            this.nameTB.TabIndex = 2;
             // 
             // label1
             // 
@@ -337,12 +339,35 @@
             this.bannedDataGridViewCheckBoxColumn.MinimumWidth = 6;
             this.bannedDataGridViewCheckBoxColumn.Name = "bannedDataGridViewCheckBoxColumn";
             // 
+            // adminID
+            // 
+            this.adminID.AutoSize = true;
+            this.adminID.Font = new System.Drawing.Font("Rockwell", 10.8F, System.Drawing.FontStyle.Bold);
+            this.adminID.Location = new System.Drawing.Point(160, 419);
+            this.adminID.Name = "adminID";
+            this.adminID.Size = new System.Drawing.Size(27, 22);
+            this.adminID.TabIndex = 13;
+            this.adminID.Text = "id";
+            // 
+            // label7
+            // 
+            this.label7.AutoSize = true;
+            this.label7.Font = new System.Drawing.Font("Rockwell", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label7.Location = new System.Drawing.Point(8, 419);
+            this.label7.Name = "label7";
+            this.label7.Size = new System.Drawing.Size(146, 22);
+            this.label7.TabIndex = 12;
+            this.label7.Text = "MANAGER ID :";
+            // 
             // customerForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.Color.LightCyan;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.adminID);
             this.Controls.Add(this.customerDGW);
+            this.Controls.Add(this.label7);
             this.Controls.Add(this.groupBox1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedDialog;
             this.Name = "customerForm";
@@ -360,6 +385,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.customersTableBindingSource3)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.customerDGW)).EndInit();
             this.ResumeLayout(false);
+            this.PerformLayout();
 
         }
 
@@ -398,5 +424,7 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn mailDataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridViewTextBoxColumn recordDateDataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridViewCheckBoxColumn bannedDataGridViewCheckBoxColumn;
+        public System.Windows.Forms.Label adminID;
+        private System.Windows.Forms.Label label7;
     }
 }

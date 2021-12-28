@@ -15,3 +15,6 @@ C:\Users\Mehmet ESTİ\Source\Repos\E-Ticaret Proje Form Arayuzu\E-Ticaret Proje 
 C:\Users\Mehmet ESTİ\Source\Repos\E-Ticaret Proje Form Arayuzu\E-Ticaret Proje Form Arayuzu\obj\Debug\E_Ticaret_Proje_Form_Arayuzu.Form2.resources
 C:\Users\Mehmet ESTİ\Source\Repos\E-Ticaret Proje Form Arayuzu\E-Ticaret Proje Form Arayuzu\obj\Debug\E_Ticaret_Proje_Form_Arayuzu.customerForm.resources
 C:\Users\Mehmet ESTİ\Source\Repos\E-Ticaret Proje Form Arayuzu\E-Ticaret Proje Form Arayuzu\obj\Debug\E_Ticaret_Proje_Form_Arayuzu.productForm.resources
+C:\Users\Mehmet ESTİ\Source\Repos\E-Ticaret Proje Form Arayuzu\E-Ticaret Proje Form Arayuzu\obj\Debug\E_Ticaret_Proje_Form_Arayuzu.reviwForm.resources
+C:\Users\Mehmet ESTİ\Source\Repos\E-Ticaret Proje Form Arayuzu\E-Ticaret Proje Form Arayuzu\obj\Debug\E_Ticaret_Proje_Form_Arayuzu.shopRegistrations.resources
+C:\Users\Mehmet ESTİ\Source\Repos\E-Ticaret Proje Form Arayuzu\E-Ticaret Proje Form Arayuzu\obj\Debug\E_Ticaret_Proje_Form_Arayuzu.n.resources
