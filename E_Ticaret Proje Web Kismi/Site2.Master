@@ -1,0 +1,59 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Site2.master.cs" Inherits="E_Ticaret_Proje_Web_Kismi.Site2" %>
+
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <title></title>
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+    <style type="text/css">
+        #menuBar
+        {
+            border-width:3px;
+            border-color:red;
+            border-style:solid;
+            width:20%;
+            text-align:center;
+            border-radius:10px;
+        }
+        #menuText
+        {
+            text-decoration:none;
+            border-radius:10px;
+        }
+        .auto-style1 {
+            width: 100%;
+        }
+        .auto-style3 {
+            margin-right: 0px;
+        }
+        </style>
+</head>
+<body>
+    <form id="form1" runat="server">
+        <div style="height:150px;width:500px;margin-left:auto;margin-right:auto;">
+            <img src="estiburada.png"
+        <div class="auto-style3"></div>
+        <div style="height:30px; border-radius:10px; background-color: #33CC33">
+
+            <table class="auto-style1">
+                <tr id="menuBar">
+                    <td id="menuBar"><a href="anaSayfa.aspx" id="menuText"">ANA SAYFA</a></td>
+                    <td id="menuBar"><a href="alisverisKaydi.aspx" id="menuText"">GECMIS ALISVERISLERIM</a></td>
+                    <td id="menuBar"><a href="hakkimizda.aspx" id="menuText"">HAKKIMIZDA</a></td>
+                    <td id="menuBar"><a href="iletisim.aspx" id="menuText"">ILETISIM</a></td>
+                    <td id="menuBar"><a href="kayitOl.aspx" id="menuText"">KAYIT OL</a></td>
+                </tr>
+            </table>
+
+        </div>
+        <div>
+            <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+                <p> merhaba naber</p>
+            </asp:ContentPlaceHolder>
+        </div>
+    </form>
+</body>
+</html>
