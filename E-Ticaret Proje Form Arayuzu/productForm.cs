@@ -42,14 +42,14 @@ namespace E_Ticaret_Proje_Form_Arayuzu
             if (buttonMemory == 0)
             {
                 access.addProduct(nameTB.Text, propertiesTB.Text,System.Convert.ToInt32(priceTB.Text),
-                    System.Convert.ToInt32(CategoriesCB.Text), System.Convert.ToInt32(adminID.Text));
+                    System.Convert.ToInt32(CategoriesCB.Text), System.Convert.ToInt32(adminID.Text),imgAdress.Text);
                 MessageBox.Show("Product added.");
                 this.productsTableTableAdapter2.Fill(this.shoppingDataSet10.ProductsTable);
             }
             if (buttonMemory == 1)
             {
                 access.updateProduct(nameTB.Text, propertiesTB.Text, System.Convert.ToInt32(priceTB.Text),
-                    System.Convert.ToInt32(CategoriesCB.Text), System.Convert.ToInt32(idTB.Text));
+                    System.Convert.ToInt32(CategoriesCB.Text), System.Convert.ToInt32(idTB.Text),imgAdress.Text);
                 MessageBox.Show("Product updated.");
                 this.productsTableTableAdapter2.Fill(this.shoppingDataSet10.ProductsTable);
             }

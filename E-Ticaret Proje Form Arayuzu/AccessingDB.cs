@@ -63,36 +63,38 @@ namespace E_Ticaret_Proje_Form_Arayuzu
             _connection.Close();
         }
 
-        public void addProduct(string name,string properties,int price,int categoryID,int adderID)
+        public void addProduct(string name,string properties,int price,int categoryID,int adderID,string imgAdress)
         {
             ConnectionControl();
 
-            SqlCommand command = new SqlCommand("INSERT INTO ProductsTable(Name,Properties,Price,Category_ID,Adder_ID) " +
-                "VALUES(@name,@properties,@price,@categoryID,@adderID)",_connection);
+            SqlCommand command = new SqlCommand("INSERT INTO ProductsTable(Name,Properties,Price,Category_ID,Adder_ID,Img) " +
+                "VALUES(@name,@properties,@price,@categoryID,@adderID,@imgAdress)",_connection);
 
             command.Parameters.AddWithValue("@name", name);
             command.Parameters.AddWithValue("@properties", properties);
             command.Parameters.AddWithValue("@price", price);
             command.Parameters.AddWithValue("@categoryID", categoryID);
             command.Parameters.AddWithValue("@adderID", adderID);
+            command.Parameters.AddWithValue("@imgAdress", imgAdress);
 
             command.ExecuteNonQuery();
 
             _connection.Close();
         }
 
-        public void updateProduct(string name,string properties,int price,int categoryID,int productId)
+        public void updateProduct(string name,string properties,int price,int categoryID,int productId, string imgAdress)
         {
             ConnectionControl();
 
             SqlCommand command = new SqlCommand("UPDATE ProductsTable SET Name = @name,Properties = @properties,Price =@price," +
-                "Category_ID=@categoryID WHERE Product_ID=@productID", _connection);
+                "Category_ID=@categoryID,Img=@imgAdress WHERE Product_ID=@productID", _connection);
 
             command.Parameters.AddWithValue("@name", name);
             command.Parameters.AddWithValue("@properties", properties);
             command.Parameters.AddWithValue("@price", price);
             command.Parameters.AddWithValue("@categoryID", categoryID);
             command.Parameters.AddWithValue("@productID", productId);
+            command.Parameters.AddWithValue("@imgAdress", imgAdress);
 
             command.ExecuteNonQuery();
 

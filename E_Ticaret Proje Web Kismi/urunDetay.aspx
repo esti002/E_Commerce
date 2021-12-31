@@ -4,6 +4,9 @@
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
     <asp:DataList ID="DataList1" runat="server">
         <ItemTemplate>
+            <asp:Image ID="Image1" runat="server" ImageUrl='<%# Eval("Img") %>' Width="500px" />
+            <br />
+            <br />
             URUN:<br />
             <asp:Label ID="Label1" runat="server" Text='<%# Eval("Name") %>'></asp:Label>
             <br />
@@ -16,8 +19,16 @@
             FIYATI:&nbsp;
             <asp:Label ID="Label3" runat="server" Text='<%# Eval("Price") %>'></asp:Label>
             <br />
-            URUNUN EKLENME TARIHI:&nbsp;
-            <asp:Label ID="Label4" runat="server" Text='<%# Eval("Add_Date") %>'></asp:Label>
+            <asp:Label ID="Label4" runat="server" Text='<%# Eval("Add_Date") %>' Font-Italic="True"></asp:Label>
+            <br />
+            <br />
+            YORUMLAR:<br />
         </ItemTemplate>
     </asp:DataList>
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
 </asp:Content>

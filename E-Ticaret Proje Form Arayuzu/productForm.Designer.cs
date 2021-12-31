@@ -70,6 +70,8 @@
             this.productsDGW = new System.Windows.Forms.DataGridView();
             this.adminID = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
+            this.imgAdress = new System.Windows.Forms.TextBox();
+            this.label4 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.productsTableBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.shoppingDataSet4)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.shoppingDataSet7)).BeginInit();
@@ -116,6 +118,8 @@
             // groupBox1
             // 
             this.groupBox1.BackColor = System.Drawing.Color.LightCyan;
+            this.groupBox1.Controls.Add(this.imgAdress);
+            this.groupBox1.Controls.Add(this.label4);
             this.groupBox1.Controls.Add(this.CategoriesCB);
             this.groupBox1.Controls.Add(this.propertiesTB);
             this.groupBox1.Controls.Add(this.label7);
@@ -420,6 +424,25 @@
             this.label1.TabIndex = 25;
             this.label1.Text = "MANAGER ID :";
             // 
+            // imgAdress
+            // 
+            this.imgAdress.Location = new System.Drawing.Point(167, 175);
+            this.imgAdress.Name = "imgAdress";
+            this.imgAdress.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            this.imgAdress.Size = new System.Drawing.Size(184, 22);
+            this.imgAdress.TabIndex = 25;
+            // 
+            // label4
+            // 
+            this.label4.AutoSize = true;
+            this.label4.BackColor = System.Drawing.Color.Transparent;
+            this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold);
+            this.label4.Location = new System.Drawing.Point(48, 181);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(60, 16);
+            this.label4.TabIndex = 26;
+            this.label4.Text = "PRICE :";
+            // 
             // productForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -495,5 +518,7 @@
         private System.Windows.Forms.DataGridView productsDGW;
         public System.Windows.Forms.Label adminID;
         private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.TextBox imgAdress;
+        private System.Windows.Forms.Label label4;
     }
 }

@@ -9,10 +9,18 @@
     <asp:ContentPlaceHolder ID="head" runat="server">
     </asp:ContentPlaceHolder>
     <style type="text/css">
-        #menuBar
+        #menuBar1
         {
             border-width:3px;
             border-color:red;
+            border-style:solid;
+            width:20%;
+            text-align:center;
+            border-radius:10px;
+        }
+        #menuBar2
+        {
+            border-width:3px;
             border-style:solid;
             width:20%;
             text-align:center;
@@ -29,6 +37,12 @@
         .auto-style3 {
             margin-right: 0px;
         }
+        .auto-style4 {
+            width: 20%;
+        }
+        .auto-style5 {
+            height: 30px;
+        }
         </style>
 </head>
 <body>
@@ -36,15 +50,15 @@
         <div style="height:150px;width:500px;margin-left:auto;margin-right:auto;">
             <img src="estiburada.png"
         <div class="auto-style3"></div>
-        <div style="height:30px; border-radius:10px; background-color: #33CC33">
+        <div style="border-radius:10px; background-color: #66FF66" class="auto-style5">
 
             <table class="auto-style1">
-                <tr id="menuBar">
-                    <td id="menuBar"><a href="anaSayfa.aspx" id="menuText"">ANA SAYFA</a></td>
-                    <td id="menuBar"><a href="alisverisKaydi.aspx" id="menuText"">GECMIS ALISVERISLERIM</a></td>
-                    <td id="menuBar"><a href="hakkimizda.aspx" id="menuText"">HAKKIMIZDA</a></td>
-                    <td id="menuBar"><a href="iletisim.aspx" id="menuText"">ILETISIM</a></td>
-                    <td id="menuBar"><a href="kayitOl.aspx" id="menuText"">KAYIT OL</a></td>
+                <tr id="menuBar1">
+                    <td id="menuBar2" class="auto-style4"><a href="anaSayfa.aspx" id="menuText"">ANA SAYFA</a></td>
+                    <td id="menuBar2"><a href="alisverisKaydi.aspx" id="menuText"">GECMIS ALISVERISLERIM</a></td>
+                    <td id="menuBar2"><a href="hakkimizda.aspx" id="menuText"">HAKKIMIZDA</a></td>
+                    <td id="menuBar2"><a href="iletisim.aspx" id="menuText"">ILETISIM</a></td>
+                    <td id="menuBar2"><a href="kayitOl.aspx" id="menuText"">KAYIT OL</a></td>
                 </tr>
             </table>
 
