@@ -38,29 +38,31 @@
             this.reviewTB = new System.Windows.Forms.RichTextBox();
             this.label7 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
-            this.productIdTB = new System.Windows.Forms.TextBox();
-            this.label3 = new System.Windows.Forms.Label();
-            this.reviewerIdTB = new System.Windows.Forms.TextBox();
-            this.label2 = new System.Windows.Forms.Label();
             this.idTB = new System.Windows.Forms.TextBox();
             this.idLabel = new System.Windows.Forms.Label();
             this.reviewsTableBindingSource1 = new System.Windows.Forms.BindingSource(this.components);
             this.shoppingDataSet12 = new E_Ticaret_Proje_Form_Arayuzu.ShoppingDataSet12();
             this.reviewsTableTableAdapter1 = new E_Ticaret_Proje_Form_Arayuzu.ShoppingDataSet12TableAdapters.ReviewsTableTableAdapter();
+            this.reviewsTableBindingSource2 = new System.Windows.Forms.BindingSource(this.components);
+            this.shoppingDataSet18 = new E_Ticaret_Proje_Form_Arayuzu.ShoppingDataSet18();
+            this.adminID = new System.Windows.Forms.Label();
+            this.label1 = new System.Windows.Forms.Label();
+            this.reviewsTableTableAdapter2 = new E_Ticaret_Proje_Form_Arayuzu.ShoppingDataSet18TableAdapters.ReviewsTableTableAdapter();
             this.reviewDGW = new System.Windows.Forms.DataGridView();
             this.reviewIDDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.reviewerNameDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.reviwerIDDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.productIDDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.reviewDateDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.reviewDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.confirmedDataGridViewCheckBoxColumn = new System.Windows.Forms.DataGridViewCheckBoxColumn();
-            this.adminID = new System.Windows.Forms.Label();
-            this.label1 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.reviewsTableBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.shoppingDataSet11)).BeginInit();
             this.groupBox1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.reviewsTableBindingSource1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.shoppingDataSet12)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.reviewsTableBindingSource2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.shoppingDataSet18)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.reviewDGW)).BeginInit();
             this.SuspendLayout();
             // 
@@ -85,10 +87,6 @@
             this.groupBox1.Controls.Add(this.reviewTB);
             this.groupBox1.Controls.Add(this.label7);
             this.groupBox1.Controls.Add(this.label5);
-            this.groupBox1.Controls.Add(this.productIdTB);
-            this.groupBox1.Controls.Add(this.label3);
-            this.groupBox1.Controls.Add(this.reviewerIdTB);
-            this.groupBox1.Controls.Add(this.label2);
             this.groupBox1.Controls.Add(this.idTB);
             this.groupBox1.Controls.Add(this.idLabel);
             this.groupBox1.Location = new System.Drawing.Point(31, 232);
@@ -112,7 +110,7 @@
             // confirmedCB
             // 
             this.confirmedCB.AutoSize = true;
-            this.confirmedCB.Location = new System.Drawing.Point(151, 130);
+            this.confirmedCB.Location = new System.Drawing.Point(153, 128);
             this.confirmedCB.Name = "confirmedCB";
             this.confirmedCB.Size = new System.Drawing.Size(18, 17);
             this.confirmedCB.TabIndex = 34;
@@ -142,53 +140,15 @@
             this.label5.AutoSize = true;
             this.label5.BackColor = System.Drawing.Color.Transparent;
             this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold);
-            this.label5.Location = new System.Drawing.Point(32, 130);
+            this.label5.Location = new System.Drawing.Point(34, 128);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(104, 16);
             this.label5.TabIndex = 34;
             this.label5.Text = "CONFIRMED :";
             // 
-            // productIdTB
-            // 
-            this.productIdTB.Location = new System.Drawing.Point(151, 99);
-            this.productIdTB.Name = "productIdTB";
-            this.productIdTB.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.productIdTB.Size = new System.Drawing.Size(184, 22);
-            this.productIdTB.TabIndex = 33;
-            // 
-            // label3
-            // 
-            this.label3.AutoSize = true;
-            this.label3.BackColor = System.Drawing.Color.Transparent;
-            this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold);
-            this.label3.Location = new System.Drawing.Point(32, 105);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(108, 16);
-            this.label3.TabIndex = 32;
-            this.label3.Text = "PRODUCT ID :";
-            // 
-            // reviewerIdTB
-            // 
-            this.reviewerIdTB.Location = new System.Drawing.Point(151, 71);
-            this.reviewerIdTB.Name = "reviewerIdTB";
-            this.reviewerIdTB.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.reviewerIdTB.Size = new System.Drawing.Size(184, 22);
-            this.reviewerIdTB.TabIndex = 31;
-            // 
-            // label2
-            // 
-            this.label2.AutoSize = true;
-            this.label2.BackColor = System.Drawing.Color.Transparent;
-            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold);
-            this.label2.Location = new System.Drawing.Point(32, 77);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(114, 16);
-            this.label2.TabIndex = 30;
-            this.label2.Text = "REWIEVER ID :";
-            // 
             // idTB
             // 
-            this.idTB.Location = new System.Drawing.Point(151, 43);
+            this.idTB.Location = new System.Drawing.Point(153, 90);
             this.idTB.Name = "idTB";
             this.idTB.ReadOnly = true;
             this.idTB.Size = new System.Drawing.Size(184, 22);
@@ -199,7 +159,7 @@
             this.idLabel.AutoSize = true;
             this.idLabel.BackColor = System.Drawing.Color.Transparent;
             this.idLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold);
-            this.idLabel.Location = new System.Drawing.Point(32, 49);
+            this.idLabel.Location = new System.Drawing.Point(34, 96);
             this.idLabel.Name = "idLabel";
             this.idLabel.Size = new System.Drawing.Size(93, 16);
             this.idLabel.TabIndex = 28;
@@ -219,6 +179,40 @@
             // 
             this.reviewsTableTableAdapter1.ClearBeforeFill = true;
             // 
+            // reviewsTableBindingSource2
+            // 
+            this.reviewsTableBindingSource2.DataMember = "ReviewsTable";
+            this.reviewsTableBindingSource2.DataSource = this.shoppingDataSet18;
+            // 
+            // shoppingDataSet18
+            // 
+            this.shoppingDataSet18.DataSetName = "ShoppingDataSet18";
+            this.shoppingDataSet18.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
+            // 
+            // adminID
+            // 
+            this.adminID.AutoSize = true;
+            this.adminID.Font = new System.Drawing.Font("Rockwell", 10.8F, System.Drawing.FontStyle.Bold);
+            this.adminID.Location = new System.Drawing.Point(164, 502);
+            this.adminID.Name = "adminID";
+            this.adminID.Size = new System.Drawing.Size(27, 22);
+            this.adminID.TabIndex = 13;
+            this.adminID.Text = "id";
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Rockwell", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Location = new System.Drawing.Point(12, 502);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(146, 22);
+            this.label1.TabIndex = 12;
+            this.label1.Text = "MANAGER ID :";
+            // 
+            // reviewsTableTableAdapter2
+            // 
+            this.reviewsTableTableAdapter2.ClearBeforeFill = true;
+            // 
             // reviewDGW
             // 
             this.reviewDGW.AutoGenerateColumns = false;
@@ -226,19 +220,20 @@
             this.reviewDGW.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.reviewDGW.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.reviewIDDataGridViewTextBoxColumn,
+            this.reviewerNameDataGridViewTextBoxColumn,
             this.reviwerIDDataGridViewTextBoxColumn,
             this.productIDDataGridViewTextBoxColumn,
             this.reviewDateDataGridViewTextBoxColumn,
             this.reviewDataGridViewTextBoxColumn,
             this.confirmedDataGridViewCheckBoxColumn});
-            this.reviewDGW.DataSource = this.reviewsTableBindingSource1;
-            this.reviewDGW.Location = new System.Drawing.Point(31, 25);
+            this.reviewDGW.DataSource = this.reviewsTableBindingSource2;
+            this.reviewDGW.Location = new System.Drawing.Point(31, 13);
             this.reviewDGW.Name = "reviewDGW";
             this.reviewDGW.RowHeadersWidth = 51;
             this.reviewDGW.RowTemplate.Height = 24;
-            this.reviewDGW.Size = new System.Drawing.Size(1182, 184);
-            this.reviewDGW.TabIndex = 4;
-            this.reviewDGW.CellMouseClick += new System.Windows.Forms.DataGridViewCellMouseEventHandler(this.dataGridView1_CellMouseClick);
+            this.reviewDGW.Size = new System.Drawing.Size(1182, 213);
+            this.reviewDGW.TabIndex = 14;
+            this.reviewDGW.CellMouseClick += new System.Windows.Forms.DataGridViewCellMouseEventHandler(this.reviewDGW_CellMouseClick);
             // 
             // reviewIDDataGridViewTextBoxColumn
             // 
@@ -247,6 +242,13 @@
             this.reviewIDDataGridViewTextBoxColumn.MinimumWidth = 6;
             this.reviewIDDataGridViewTextBoxColumn.Name = "reviewIDDataGridViewTextBoxColumn";
             this.reviewIDDataGridViewTextBoxColumn.ReadOnly = true;
+            // 
+            // reviewerNameDataGridViewTextBoxColumn
+            // 
+            this.reviewerNameDataGridViewTextBoxColumn.DataPropertyName = "Reviewer_Name";
+            this.reviewerNameDataGridViewTextBoxColumn.HeaderText = "Reviewer_Name";
+            this.reviewerNameDataGridViewTextBoxColumn.MinimumWidth = 6;
+            this.reviewerNameDataGridViewTextBoxColumn.Name = "reviewerNameDataGridViewTextBoxColumn";
             // 
             // reviwerIDDataGridViewTextBoxColumn
             // 
@@ -283,35 +285,15 @@
             this.confirmedDataGridViewCheckBoxColumn.MinimumWidth = 6;
             this.confirmedDataGridViewCheckBoxColumn.Name = "confirmedDataGridViewCheckBoxColumn";
             // 
-            // adminID
-            // 
-            this.adminID.AutoSize = true;
-            this.adminID.Font = new System.Drawing.Font("Rockwell", 10.8F, System.Drawing.FontStyle.Bold);
-            this.adminID.Location = new System.Drawing.Point(164, 502);
-            this.adminID.Name = "adminID";
-            this.adminID.Size = new System.Drawing.Size(27, 22);
-            this.adminID.TabIndex = 13;
-            this.adminID.Text = "id";
-            // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Rockwell", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(12, 502);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(146, 22);
-            this.label1.TabIndex = 12;
-            this.label1.Text = "MANAGER ID :";
-            // 
             // reviwForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.LightCyan;
             this.ClientSize = new System.Drawing.Size(1262, 533);
+            this.Controls.Add(this.reviewDGW);
             this.Controls.Add(this.adminID);
             this.Controls.Add(this.label1);
-            this.Controls.Add(this.reviewDGW);
             this.Controls.Add(this.groupBox1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedDialog;
             this.Name = "reviwForm";
@@ -323,6 +305,8 @@
             this.groupBox1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.reviewsTableBindingSource1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.shoppingDataSet12)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.reviewsTableBindingSource2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.shoppingDataSet18)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.reviewDGW)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
@@ -337,10 +321,6 @@
         private System.Windows.Forms.RichTextBox reviewTB;
         private System.Windows.Forms.Label label7;
         private System.Windows.Forms.Label label5;
-        private System.Windows.Forms.TextBox productIdTB;
-        private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.TextBox reviewerIdTB;
-        private System.Windows.Forms.Label label2;
         private System.Windows.Forms.TextBox idTB;
         private System.Windows.Forms.Label idLabel;
         private System.Windows.Forms.CheckBox confirmedCB;
@@ -348,14 +328,18 @@
         private ShoppingDataSet12 shoppingDataSet12;
         private System.Windows.Forms.BindingSource reviewsTableBindingSource1;
         private ShoppingDataSet12TableAdapters.ReviewsTableTableAdapter reviewsTableTableAdapter1;
+        public System.Windows.Forms.Label adminID;
+        private System.Windows.Forms.Label label1;
+        private ShoppingDataSet18 shoppingDataSet18;
+        private System.Windows.Forms.BindingSource reviewsTableBindingSource2;
+        private ShoppingDataSet18TableAdapters.ReviewsTableTableAdapter reviewsTableTableAdapter2;
         private System.Windows.Forms.DataGridView reviewDGW;
         private System.Windows.Forms.DataGridViewTextBoxColumn reviewIDDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn reviewerNameDataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridViewTextBoxColumn reviwerIDDataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridViewTextBoxColumn productIDDataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridViewTextBoxColumn reviewDateDataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridViewTextBoxColumn reviewDataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridViewCheckBoxColumn confirmedDataGridViewCheckBoxColumn;
-        public System.Windows.Forms.Label adminID;
-        private System.Windows.Forms.Label label1;
     }
 }

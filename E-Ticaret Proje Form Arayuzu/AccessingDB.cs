@@ -114,15 +114,13 @@ namespace E_Ticaret_Proje_Form_Arayuzu
             _connection.Close();
         }
 
-        public void updateReviews(int reviewID, int reviewerID,int productID,string review,bool confirmed)
+        public void updateReviews(int reviewID, string review,bool confirmed)
         {
             ConnectionControl();
 
-            SqlCommand command = new SqlCommand("UPDATE ReviewsTable SET Reviwer_ID=@reviewerID,Product_ID=@productID," +
+            SqlCommand command = new SqlCommand("UPDATE ReviewsTable SET " +
                 "Review = @review, Confirmed = @confirmed WHERE Review_ID= @reviewID", _connection);
 
-            command.Parameters.AddWithValue("@reviewerID", reviewerID);
-            command.Parameters.AddWithValue("@productID", productID);
             command.Parameters.AddWithValue("@review", review);
             command.Parameters.AddWithValue("@confirmed", confirmed);
             command.Parameters.AddWithValue("@reviewID", reviewID); 

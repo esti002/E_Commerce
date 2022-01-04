@@ -16,7 +16,7 @@
                 <br />
                 FIYATI:
                 <asp:Label ID="Label3" runat="server" Text='<%# Eval("Price") %>'></asp:Label>
-            </div>
+                TL</div>
             </a>
         </ItemTemplate>
         <SeparatorStyle HorizontalAlign="Right" />

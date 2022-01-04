@@ -85,12 +85,9 @@
       <DependentUpon>alisverisKaydi.aspx</DependentUpon>
     </Compile>
     <Compile Include="anaSayfa.aspx.cs">
-      <DependentUpon>anaSayfa.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="anaSayfa.aspx.designer.cs">
-      <DependentUpon>anaSayfa.aspx</DependentUpon>
-    </Compile>
+    <Compile Include="anaSayfa.aspx.designer.cs" />
     <Compile Include="hakkimizda.aspx.cs">
       <DependentUpon>hakkimizda.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>

@@ -133,6 +133,11 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>ShoppingDataSet17.xsd</DependentUpon>
     </Compile>
+    <Compile Include="ShoppingDataSet18.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ShoppingDataSet18.xsd</DependentUpon>
+    </Compile>
     <Compile Include="ShoppingDataSet21.Designer.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
@@ -323,6 +328,17 @@
     </None>
     <None Include="ShoppingDataSet17.xss">
       <DependentUpon>ShoppingDataSet17.xsd</DependentUpon>
+    </None>
+    <None Include="ShoppingDataSet18.xsc">
+      <DependentUpon>ShoppingDataSet18.xsd</DependentUpon>
+    </None>
+    <None Include="ShoppingDataSet18.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>ShoppingDataSet18.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="ShoppingDataSet18.xss">
+      <DependentUpon>ShoppingDataSet18.xsd</DependentUpon>
     </None>
     <None Include="ShoppingDataSet21.xsc">
       <DependentUpon>ShoppingDataSet21.xsd</DependentUpon>

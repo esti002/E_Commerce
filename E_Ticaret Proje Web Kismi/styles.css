@@ -1,3 +1,9 @@
-﻿.links
+﻿.button1
 {
+    background-color:aqua;
+    text-align:center;
+    border-block:solid;
+    border-radius:10px;
+    border-width:3px;
+
 }
