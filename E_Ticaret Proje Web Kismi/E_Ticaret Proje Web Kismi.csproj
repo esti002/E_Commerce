@@ -32,6 +32,13 @@
     <DefineConstants>DEBUG;TRACE</DefineConstants>
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
+    <DeployEncryptKey>6449649468466dc4asfv6sd4sf%3f%3f&gt;AS.%3fCasc57cas6%40!</DeployEncryptKey>
+    <LegacyPublishPropertiesPageEnabled>true</LegacyPublishPropertiesPageEnabled>
+    <IncludeIisSettings>false</IncludeIisSettings>
+    <PublishDatabaseSettings>
+      <Objects>
+      </Objects>
+    </PublishDatabaseSettings>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
     <DebugSymbols>true</DebugSymbols>
@@ -44,6 +51,7 @@
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Web.DataVisualization" />
     <Reference Include="System.Web.DynamicData" />
     <Reference Include="System.Web.Entity" />
     <Reference Include="System.Web.ApplicationServices" />
@@ -72,6 +80,7 @@
     <Content Include="hakkimizda.aspx" />
     <Content Include="iletisim.aspx" />
     <Content Include="kayitOl.aspx" />
+    <Content Include="satinAl.aspx" />
     <Content Include="styles.css" />
     <Content Include="urunDetay.aspx" />
     <Content Include="Web.config" />
@@ -110,6 +119,13 @@
       <DependentUpon>kayitOl.aspx</DependentUpon>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="satinAl.aspx.cs">
+      <DependentUpon>satinAl.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="satinAl.aspx.designer.cs">
+      <DependentUpon>satinAl.aspx</DependentUpon>
+    </Compile>
     <Compile Include="Site2.Master.cs">
       <DependentUpon>Site2.Master</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
