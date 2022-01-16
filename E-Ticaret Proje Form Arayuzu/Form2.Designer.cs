@@ -37,6 +37,7 @@
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.adminID = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
+            this.reviewInfosTableAdapter = new E_Ticaret_Proje_Form_Arayuzu.ShoppingDataSet20TableAdapters.ReviewInfosTableAdapter();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -146,6 +147,10 @@
             this.label5.TabIndex = 10;
             this.label5.Text = "MANAGER ID :";
             // 
+            // reviewInfosTableAdapter
+            // 
+            this.reviewInfosTableAdapter.ClearBeforeFill = true;
+            // 
             // Form2
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -163,6 +168,7 @@
             this.Controls.Add(this.pictureBox1);
             this.Name = "Form2";
             this.Text = " E-COMMERCE ADMIN PANEL";
+            this.Load += new System.EventHandler(this.Form2_Load);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
@@ -180,5 +186,6 @@
         private System.Windows.Forms.Button button5;
         private System.Windows.Forms.Label label5;
         public System.Windows.Forms.Label adminID;
+        private ShoppingDataSet20TableAdapters.ReviewInfosTableAdapter reviewInfosTableAdapter;
     }
 }

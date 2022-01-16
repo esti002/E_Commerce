@@ -59,43 +59,52 @@ namespace E_Ticaret_Proje_Web_Kismi
 
         protected void Button1_Click(object sender, EventArgs e)
         {
-            if (checker() == true)
+            if (bannedChecker() == true)
             {
-                Label14.Visible = false;
-
-                //bu kisim calisiyor ancak asagidakini tekrar dene calisirsa githuba oyle yukle
-                int customerId = -1;
-
-                SqlCommand checkId = new SqlCommand("SELECT * FROM CustomersTable WHERE Mail=@mail AND Password=@password", connection.baglanti());
-
-                checkId.Parameters.AddWithValue("@mail", TextBox1.Text);
-                checkId.Parameters.AddWithValue("@password", TextBox2.Text);
-
-                SqlDataAdapter adapter = new SqlDataAdapter(checkId);
-
-                DataSet ds = new DataSet();
-                adapter.Fill(ds);
-
-                customerId = Convert.ToInt32(ds.Tables[0].Rows[0][0]);
-
-                connection.baglanti().Close();
-
-                if (customerId > 0)
-                {
-                    SqlCommand saveReview = new SqlCommand("INSERT INTO ReviewsTable(Reviwer_ID,Product_ID,Review) " +
-                        "VALUES(@ReviewerId,@ProductId,@Review)", connection.baglanti());
-
-                    saveReview.Parameters.AddWithValue("@ReviewerId", customerId);
-                    saveReview.Parameters.AddWithValue("@ProductId", productId);
-                    saveReview.Parameters.AddWithValue("@Review", TextBox3.Text);
-
-                    saveReview.ExecuteNonQuery();
-                    connection.baglanti().Close();
-                }
+                Label14.Text = "HESABINIZ BANLIDIR.";
+                Label14.Visible = true;
             }
             else
             {
-                Label14.Visible = true;
+                if (checker() == true)
+                {
+                    Label14.Visible = false;
+
+                    //bu kisim calisiyor ancak asagidakini tekrar dene calisirsa githuba oyle yukle
+                    int customerId = -1;
+
+                    SqlCommand checkId = new SqlCommand("SELECT * FROM CustomersTable WHERE Mail=@mail AND Password=@password", connection.baglanti());
+
+                    checkId.Parameters.AddWithValue("@mail", TextBox1.Text);
+                    checkId.Parameters.AddWithValue("@password", TextBox2.Text);
+
+                    SqlDataAdapter adapter = new SqlDataAdapter(checkId);
+
+                    DataSet ds = new DataSet();
+                    adapter.Fill(ds);
+
+                    customerId = Convert.ToInt32(ds.Tables[0].Rows[0][0]);
+
+                    connection.baglanti().Close();
+
+                    if (customerId > 0)
+                    {
+                        SqlCommand saveReview = new SqlCommand("INSERT INTO ReviewsTable(Reviwer_ID,Product_ID,Review) " +
+                            "VALUES(@ReviewerId,@ProductId,@Review)", connection.baglanti());
+
+                        saveReview.Parameters.AddWithValue("@ReviewerId", customerId);
+                        saveReview.Parameters.AddWithValue("@ProductId", productId);
+                        saveReview.Parameters.AddWithValue("@Review", TextBox3.Text);
+
+                        saveReview.ExecuteNonQuery();
+                        connection.baglanti().Close();
+                    }
+                }
+                else
+                {
+                    Label14.Text = "MAIL YA DA SIFRENIZ HATALI.";
+                    Label14.Visible = true;
+                }
             }
 
 
@@ -137,6 +146,28 @@ namespace E_Ticaret_Proje_Web_Kismi
         private bool checker()
         {
             SqlCommand command = new SqlCommand("SELECT * FROM CustomersTable WHERE Mail=@mail AND Password=@password", connection.baglanti());
+
+            command.Parameters.AddWithValue("@mail", TextBox1.Text);
+            command.Parameters.AddWithValue("@password", TextBox2.Text);
+
+            SqlDataAdapter adapter = new SqlDataAdapter(command);
+
+            DataTable dt = new DataTable();
+            adapter.Fill(dt);
+            DataRow row = dt.NewRow();
+
+            connection.baglanti().Close();
+
+            if (dt.Rows.Count > 0)
+            {
+                return true;
+            }
+            return false;
+
+        }
+        private bool bannedChecker()
+        {
+            SqlCommand command = new SqlCommand("SELECT * FROM CustomersTable WHERE Mail=@mail AND Password=@password AND Banned='true'", connection.baglanti());
 
             command.Parameters.AddWithValue("@mail", TextBox1.Text);
             command.Parameters.AddWithValue("@password", TextBox2.Text);

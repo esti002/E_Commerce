@@ -51,5 +51,12 @@ namespace E_Ticaret_Proje_Form_Arayuzu
             adminManagers.adminID.Text = this.adminID.Text;
             adminManagers.ShowDialog();
         }
+
+        private void Form2_Load(object sender, EventArgs e)
+        {
+            // TODO: Bu kod satırı 'shoppingDataSet20.ReviewInfos' tablosuna veri yükler. Bunu gerektiği şekilde taşıyabilir, veya kaldırabilirsiniz.
+            //this.reviewInfosTableAdapter.Fill(this.shoppingDataSet20.ReviewInfos);
+
+        }
     }
 }

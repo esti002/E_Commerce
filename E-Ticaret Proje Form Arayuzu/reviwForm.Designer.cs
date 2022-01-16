@@ -50,12 +50,14 @@
             this.reviewsTableTableAdapter2 = new E_Ticaret_Proje_Form_Arayuzu.ShoppingDataSet18TableAdapters.ReviewsTableTableAdapter();
             this.reviewDGW = new System.Windows.Forms.DataGridView();
             this.reviewIDDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.reviewerNameDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.reviwerIDDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.productIDDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.reviewDateDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.reviewDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.confirmedDataGridViewCheckBoxColumn = new System.Windows.Forms.DataGridViewCheckBoxColumn();
+            this.reviewsTableBindingSource3 = new System.Windows.Forms.BindingSource(this.components);
+            this.shoppingDataSet19 = new E_Ticaret_Proje_Form_Arayuzu.ShoppingDataSet19();
+            this.reviewsTableTableAdapter3 = new E_Ticaret_Proje_Form_Arayuzu.ShoppingDataSet19TableAdapters.ReviewsTableTableAdapter();
             ((System.ComponentModel.ISupportInitialize)(this.reviewsTableBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.shoppingDataSet11)).BeginInit();
             this.groupBox1.SuspendLayout();
@@ -64,6 +66,8 @@
             ((System.ComponentModel.ISupportInitialize)(this.reviewsTableBindingSource2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.shoppingDataSet18)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.reviewDGW)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.reviewsTableBindingSource3)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.shoppingDataSet19)).BeginInit();
             this.SuspendLayout();
             // 
             // reviewsTableBindingSource
@@ -220,20 +224,19 @@
             this.reviewDGW.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.reviewDGW.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.reviewIDDataGridViewTextBoxColumn,
-            this.reviewerNameDataGridViewTextBoxColumn,
             this.reviwerIDDataGridViewTextBoxColumn,
             this.productIDDataGridViewTextBoxColumn,
             this.reviewDateDataGridViewTextBoxColumn,
             this.reviewDataGridViewTextBoxColumn,
             this.confirmedDataGridViewCheckBoxColumn});
-            this.reviewDGW.DataSource = this.reviewsTableBindingSource2;
-            this.reviewDGW.Location = new System.Drawing.Point(31, 13);
+            this.reviewDGW.DataSource = this.reviewsTableBindingSource3;
+            this.reviewDGW.Location = new System.Drawing.Point(16, 12);
             this.reviewDGW.Name = "reviewDGW";
             this.reviewDGW.RowHeadersWidth = 51;
             this.reviewDGW.RowTemplate.Height = 24;
-            this.reviewDGW.Size = new System.Drawing.Size(1182, 213);
+            this.reviewDGW.Size = new System.Drawing.Size(1197, 201);
             this.reviewDGW.TabIndex = 14;
-            this.reviewDGW.CellMouseClick += new System.Windows.Forms.DataGridViewCellMouseEventHandler(this.reviewDGW_CellMouseClick);
+            this.reviewDGW.CellMouseClick += new System.Windows.Forms.DataGridViewCellMouseEventHandler(this.reviewDGW_CellMouseClick_1);
             // 
             // reviewIDDataGridViewTextBoxColumn
             // 
@@ -242,13 +245,6 @@
             this.reviewIDDataGridViewTextBoxColumn.MinimumWidth = 6;
             this.reviewIDDataGridViewTextBoxColumn.Name = "reviewIDDataGridViewTextBoxColumn";
             this.reviewIDDataGridViewTextBoxColumn.ReadOnly = true;
-            // 
-            // reviewerNameDataGridViewTextBoxColumn
-            // 
-            this.reviewerNameDataGridViewTextBoxColumn.DataPropertyName = "Reviewer_Name";
-            this.reviewerNameDataGridViewTextBoxColumn.HeaderText = "Reviewer_Name";
-            this.reviewerNameDataGridViewTextBoxColumn.MinimumWidth = 6;
-            this.reviewerNameDataGridViewTextBoxColumn.Name = "reviewerNameDataGridViewTextBoxColumn";
             // 
             // reviwerIDDataGridViewTextBoxColumn
             // 
@@ -285,6 +281,20 @@
             this.confirmedDataGridViewCheckBoxColumn.MinimumWidth = 6;
             this.confirmedDataGridViewCheckBoxColumn.Name = "confirmedDataGridViewCheckBoxColumn";
             // 
+            // reviewsTableBindingSource3
+            // 
+            this.reviewsTableBindingSource3.DataMember = "ReviewsTable";
+            this.reviewsTableBindingSource3.DataSource = this.shoppingDataSet19;
+            // 
+            // shoppingDataSet19
+            // 
+            this.shoppingDataSet19.DataSetName = "ShoppingDataSet19";
+            this.shoppingDataSet19.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
+            // 
+            // reviewsTableTableAdapter3
+            // 
+            this.reviewsTableTableAdapter3.ClearBeforeFill = true;
+            // 
             // reviwForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -308,6 +318,8 @@
             ((System.ComponentModel.ISupportInitialize)(this.reviewsTableBindingSource2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.shoppingDataSet18)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.reviewDGW)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.reviewsTableBindingSource3)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.shoppingDataSet19)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -334,8 +346,10 @@
         private System.Windows.Forms.BindingSource reviewsTableBindingSource2;
         private ShoppingDataSet18TableAdapters.ReviewsTableTableAdapter reviewsTableTableAdapter2;
         private System.Windows.Forms.DataGridView reviewDGW;
+        private ShoppingDataSet19 shoppingDataSet19;
+        private System.Windows.Forms.BindingSource reviewsTableBindingSource3;
+        private ShoppingDataSet19TableAdapters.ReviewsTableTableAdapter reviewsTableTableAdapter3;
         private System.Windows.Forms.DataGridViewTextBoxColumn reviewIDDataGridViewTextBoxColumn;
-        private System.Windows.Forms.DataGridViewTextBoxColumn reviewerNameDataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridViewTextBoxColumn reviwerIDDataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridViewTextBoxColumn productIDDataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridViewTextBoxColumn reviewDateDataGridViewTextBoxColumn;

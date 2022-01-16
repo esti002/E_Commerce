@@ -3,7 +3,6 @@ C:\Users\Mehmet ESTİ\Source\Repos\E-Ticaret Proje Form Arayuzu\E-Ticaret Proje 
 C:\Users\Mehmet ESTİ\Source\Repos\E-Ticaret Proje Form Arayuzu\E-Ticaret Proje Form Arayuzu\bin\Debug\E-Ticaret Proje Form Arayuzu.pdb
 C:\Users\Mehmet ESTİ\Source\Repos\E-Ticaret Proje Form Arayuzu\E-Ticaret Proje Form Arayuzu\bin\Debug\System.Data.SqlClient.dll
 C:\Users\Mehmet ESTİ\Source\Repos\E-Ticaret Proje Form Arayuzu\E-Ticaret Proje Form Arayuzu\bin\Debug\System.Data.SqlClient.xml
-C:\Users\Mehmet ESTİ\Source\Repos\E-Ticaret Proje Form Arayuzu\E-Ticaret Proje Form Arayuzu\obj\Debug\E-Ticaret Proje Form Arayuzu.csproj.AssemblyReference.cache
 C:\Users\Mehmet ESTİ\Source\Repos\E-Ticaret Proje Form Arayuzu\E-Ticaret Proje Form Arayuzu\obj\Debug\E-Ticaret Proje Form Arayuzu.csproj.SuggestedBindingRedirects.cache
 C:\Users\Mehmet ESTİ\Source\Repos\E-Ticaret Proje Form Arayuzu\E-Ticaret Proje Form Arayuzu\obj\Debug\E_Ticaret_Proje_Form_Arayuzu.Form1.resources
 C:\Users\Mehmet ESTİ\Source\Repos\E-Ticaret Proje Form Arayuzu\E-Ticaret Proje Form Arayuzu\obj\Debug\E_Ticaret_Proje_Form_Arayuzu.Properties.Resources.resources
@@ -18,3 +17,4 @@ C:\Users\Mehmet ESTİ\Source\Repos\E-Ticaret Proje Form Arayuzu\E-Ticaret Proje 
 C:\Users\Mehmet ESTİ\Source\Repos\E-Ticaret Proje Form Arayuzu\E-Ticaret Proje Form Arayuzu\obj\Debug\E_Ticaret_Proje_Form_Arayuzu.reviwForm.resources
 C:\Users\Mehmet ESTİ\Source\Repos\E-Ticaret Proje Form Arayuzu\E-Ticaret Proje Form Arayuzu\obj\Debug\E_Ticaret_Proje_Form_Arayuzu.shopRegistrations.resources
 C:\Users\Mehmet ESTİ\Source\Repos\E-Ticaret Proje Form Arayuzu\E-Ticaret Proje Form Arayuzu\obj\Debug\E_Ticaret_Proje_Form_Arayuzu.n.resources
+C:\Users\Mehmet ESTİ\Source\Repos\E-Ticaret Proje Form Arayuzu\E-Ticaret Proje Form Arayuzu\obj\Debug\E-Ticaret Proje Form Arayuzu.csproj.AssemblyReference.cache
